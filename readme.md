@@ -17,3 +17,10 @@ ability to tackle complexity.
 And it lets use make cool ASCII art.
 
 ![](assets/ascii-dali.png)
+
+## Courses
+
+- [Introduction to Programming](cs-1)
+- [Data Processing and Practical Applications](cs-2)
+- [Algorithms, Data Structures, and Problem Solving](cs-3)
+- [Real-World Software Engineering](cs-capstone)
