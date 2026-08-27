@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+shopt -s globstar
+
+rm -f **/.~lock*
+rm -r **/__pycache__
+rm -r **/.ipynb_checkpoints
+npm run fmt
+git checkout solutions
+git add --all .
+git status
+git commit -m "update"
+git push
+cd ../public
+git checkout master
+trash *
+cp -r ../solutions/* .
+trash **/solved* package.json push
+git add --all .
+git commit -m "update problems"
+git push
