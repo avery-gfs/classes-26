@@ -2,7 +2,7 @@
 
 ## Why Learn to Write Software?
 
-Because it's fun and challenging. Because it lets us build interesting and
+Because it's fun and challenging. Because it helps us build interesting and
 useful tools. And because it teaches us how to solve challenging problems.
 
 ![](assets/maze.png)
@@ -20,7 +20,7 @@ And it lets use make cool ASCII art.
 
 ## Courses
 
-- [Introduction to Programming](cs-1)
-- [Data Processing and Practical Applications](cs-2)
-- [Algorithms, Data Structures, and Problem Solving](cs-3)
-- [Real-World Software Engineering](cs-capstone)
+- [CS 1: Introduction to Programming](cs-1)
+- [CS 2: Data Processing and Practical Applications](cs-2)
+- [CS 3: Algorithms, Data Structures, and Problem Solving](cs-3)
+- [CS Capstone: Real-World Software Engineering](cs-capstone)
