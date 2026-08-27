@@ -331,7 +331,6 @@ Materials: `cs2/scrabble/` (all four solved, `alice.txt`, `words.txt`)
 - Vocabulary overlap between two texts
 - Rock-paper-scissors lookup table keyed by tuples
 
-
 **Problems**
 
 - Modulo drill: `lastDigit`, `isEven`, `isWhole`, `gcd`, `calcDay`,
