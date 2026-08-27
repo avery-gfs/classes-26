@@ -3,8 +3,7 @@
 ## Why Learn to Write Software?
 
 Because it's fun and challenging. Because it lets us build interesting and
-useful tools. And because it teaches us how to approach, deconstruct, and solve
-difficult problems.
+useful tools. And because it teaches us how to solve challenging problems.
 
 ![](maze.png)
 
