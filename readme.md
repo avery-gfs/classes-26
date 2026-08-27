@@ -5,7 +5,7 @@
 Because it's fun and challenging. Because it lets us build interesting and
 useful tools. And because it teaches us how to solve challenging problems.
 
-![](maze.png)
+![](assets/maze.png)
 
 You could solve this maze above by hand. But could you describe that process
 you'd use to solve it (beyond "try random paths until you find something that
@@ -16,4 +16,4 @@ ability to tackle complexity.
 
 And it lets use make cool ASCII art.
 
-![](ascii-dali.png)
+![](assets/ascii-dali.png)
