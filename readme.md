@@ -6,25 +6,7 @@ Because it's fun and challenging. Because it lets us build interesting and
 useful tools. And because it teaches us how to approach, deconstruct, and solve
 difficult problems.
 
-```
-█████████████████████████████████
-█A█     █B█         █         █ █
-█ █ ███ █ █ ███ █████ █ █████ █ █
-█ █ █ █ █     █       █ █   █   █
-█ █ █ █ ███████████ ███ █ █ █████
-█   █ █     █     █ █ █   █     █
-█ ███ █████ █ ███ █ █ ███████ █ █
-█ █     █ █ █ █ █ █       █ █ █ █
-█ █ ███ █ █ █ █ █ █████████ ███ █
-█ █   █   █ █   █   █       █   █
-█ ███ ███ █ ███ ███ █ ███████ █ █
-█ █   █ █ █     █ █   █   █   █ █
-█ █ ███ █ ███████ █████ █ █ ███ █
-█ █   █ █       █   █   █ █ █ █ █
-█ ███ █ ███████ █ █ █ ███ █ █ █ █
-█     █           █   █     █   █
-█████████████████████████████████
-```
+![](maze.png)
 
 You could solve this maze above by hand. But could you describe that process
 you'd use to solve it (beyond "try random paths until you find something that
@@ -35,4 +17,4 @@ ability to tackle complexity.
 
 And it lets use make cool ASCII art.
 
-![](asii-dali.png)
+![](ascii-dali.png)
