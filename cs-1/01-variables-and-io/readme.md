@@ -39,7 +39,7 @@ The values that we give a function when we call it are known as **arguments**.
 Some functions like `print` can accept a flexible number of arguments, separated
 by commas `,`. Others require a fixed number of arguments.
 
-If we call print `print` with multiple strings, Python will display these string
+If we call `print` with multiple strings, Python will display these string
 together, with a space in between.
 
 ```py
@@ -58,6 +58,24 @@ print()
 
 It prints an empty line.
 
+## Print Practice
+
+What will this code print
+
+```py
+print("Hello")
+print()
+print("a", "b", "c")
+```
+
+---
+
+```
+Hello
+
+a b c
+```
+
 ## Function Calls and Terminology
 
 **Function**: an instruction that tells our program to perform a certain task.
@@ -71,9 +89,7 @@ Multiple arguments require commas in between.
 
 ## Errors
 
-When we write code, we inevitably make mistakes that cause **errors**. Let's
-look at some of the common mistakes programmers error messages these mistakes
-will generate.
+When we write code, we inevitably make mistakes that cause **errors**.
 
 **Error**: an error occurs when a computer receives instructions that it can't
 understand.
@@ -153,8 +169,8 @@ Print("Hello world!")
 
 ---
 
-Issue: incorrect name. Programming languages are picky about spelling and
-capitalization.
+Issue: incorrect function name. Programming languages are picky about spelling
+and capitalization.
 
 ```
 Traceback (most recent call last):
@@ -162,6 +178,25 @@ Traceback (most recent call last):
     Print("Hello world!")
     ^^^^^
 NameError: name 'Print' is not defined. Did you mean: 'print'?
+```
+
+### Issue 5
+
+What's the issue?
+
+```py
+color = "green"
+print("A", colour, "shirt")
+```
+
+---
+
+Issue: incorrect variable name.
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'colour' is not defined. Did you mean: 'color'?
 ```
 
 ## Variables
@@ -236,6 +271,56 @@ print(f"Good {time}, {name}!")
 Good morning, Avery!
 ```
 
+## Redefining Variables
+
+What will this code print out?
+
+```py
+color = "green"
+print(color)
+color = "red"
+print(color)
+```
+
+---
+
+```
+green
+red
+```
+
+---
+
+What will this code print out?
+
+```py
+color = "green"
+color = "red"
+print(color)
+```
+
+---
+
+```
+red
+```
+
+---
+
+What will this code print out?
+
+```py
+color = "green"
+# color = "red"
+print(color)
+```
+
+---
+
+```
+green
+```
+
 ## String Input
 
 We can use the `input` function to get text input from the **user** (a person
@@ -281,7 +366,7 @@ There would be no space between the prompt and the user input.
 What is your name?Avery
 ```
 
-## Problem: [Name and Age](name-and-age)
+## Problem: Name and Age
 
 Write code that asks the user for their name and age and prints a message
 containing both.
@@ -295,7 +380,7 @@ What is your age? 12
 Avery is 12 years old
 ```
 
-## Problem: [Citations](apa-citations)
+## Problem: Citations
 
 Write code that builds an APA book citation given:
 
@@ -316,10 +401,10 @@ Publisher: The Pragmatic Bookshelf
 ```
 
 ```
-Tate, B. A. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf
+Tate, B. A. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf.
 ```
 
-## Problem: [Mad Libs](madlibs)
+## Problem: Mad Libs
 
 Inputs
 

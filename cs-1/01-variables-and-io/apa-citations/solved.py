@@ -14,11 +14,11 @@
 # Year: 2010
 # Publisher: The Pragmatic Bookshelf
 #
-# Tate, B. A. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf
+# Tate, B. A. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf.
 
 author = input("Author: ")
 title = input("Title: ")
 year = input("Year: ")
 publisher = input("Publisher: ")
 
-print(f"{author} ({year}). {title}. {publisher}")
+print(f"{author} ({year}). {title}. {publisher}.")
