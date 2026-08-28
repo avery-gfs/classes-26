@@ -54,6 +54,10 @@ What happens if we call `print` with no arguments?
 print()
 ```
 
+---
+
+It prints an empty line.
+
 ## Function Calls and Terminology
 
 **Function**: an instruction that tells our program to perform a certain task.
@@ -63,7 +67,7 @@ which tells the computer to perform the action associated with that function.
 
 **Arguments**: zero or more values placed between the parentheses when calling a
 function, that provide the function with information on how to perform its task.
-Multiple arguments require commas in between
+Multiple arguments require commas in between.
 
 ## Errors
 
@@ -169,6 +173,22 @@ print("Hello", name)
 
 ```
 Hello Avery
+```
+
+## Variables
+
+What will this code print out?
+
+```py
+time = "morning"
+name = "Avery"
+print("Good", time, name)
+```
+
+---
+
+```
+Good morning Avery
 ```
 
 - Defining string variables
