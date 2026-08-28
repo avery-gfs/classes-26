@@ -23,7 +23,7 @@ Congratulations, you are now a computer programmer!
 You can't learn to play piano just by watching videos of other people playing.
 At some point you've got to put your fingers on the keyboard.
 
-![](https://en.wikipedia.org/wiki/Keyboard_Cat#/media/File:Keyboard_cat.jpg)
+![](https://upload.wikimedia.org/wikipedia/en/8/87/Keyboard_cat.jpg)
 
 Similarly, you should type the code in these examples into your editor, rather
 than copying and pasting it. It's tedious, but it will better prepare you to
