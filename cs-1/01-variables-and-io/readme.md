@@ -168,11 +168,7 @@ hand side.
 
 ```py
 name = "Avery"
-print("Hello", name)
-```
-
-```
-Hello Avery
+print("Hello", name)  # Prints `Hello Avery`
 ```
 
 ## Variables
@@ -191,7 +187,44 @@ print("Good", time, name)
 Good morning Avery
 ```
 
-- Defining string variables
+## Variable Names
+
+Variable names may contain letters, digits, and underscores (`_`), but may not
+start with a digit. Names are case sensitive.
+
+```py
+first_name = "Avery"  # OK
+first name = "Avery"  # ERROR: names may not contain spaces
+1stname = "Avery"     # ERROR: names may not start with a digit
+```
+
+## Format Strings
+
+What will this code print out?
+
+```py
+time = "morning"
+name = "Avery"
+print("Good", time, ",", name, "!")
+```
+
+---
+
+```
+Good morning , Avery !
+```
+
+## Format Strings
+
+We can use **format strings** (f-strings) to be more precise about how we
+display variables.
+
+```py
+time = "morning"
+name = "Avery"
+print(f"Good {time}, {name}!")  # Prints `Good morning, Avery!`
+```
+
 - Variable names
 - Printing variables
 - Printing variables with format strings
