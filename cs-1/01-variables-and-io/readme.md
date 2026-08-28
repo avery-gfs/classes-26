@@ -221,6 +221,8 @@ print("Good", time, ",", name, "!")
 Good morning , Avery !
 ```
 
+---
+
 We can use **format strings** (f-strings) to be more precise about how we
 display variables.
 
