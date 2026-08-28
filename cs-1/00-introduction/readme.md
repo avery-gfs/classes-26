@@ -1,4 +1,4 @@
-# CS1: Introduction to Programming
+# CS-1: Introduction
 
 ## Hello World!
 
@@ -52,8 +52,7 @@ print("Greetings from Python")
 print("Let's write some code")
 ```
 
-<details>
-  <summary><strong>Show Answer</strong></summary>
+---
 
 This program displays the three messages in the `print` instructions, in the
 order that they are written.
@@ -63,8 +62,6 @@ Hello world!
 Greetings from Python
 Let's write some code
 ```
-
-</details>
 
 ## Programming Languages
 
@@ -78,7 +75,7 @@ general-purpose programming language.
 That being said, the concepts we'll learn will be relevant when using a wide
 variety of programming languages.
 
-## I Made a Programming Language
+## I Made a Programming Language!
 
 Different spoken languages have different vocabulary (words) and different rules
 for how those words can fit together (grammar).
@@ -91,7 +88,7 @@ many years.
 
 ![](assets/lang-comparison.png)
 
-## Some Programming Terminology
+## General Programming Terminology
 
 **Program**: a sequence of instructions that tells a computer how to perform a
 task.
