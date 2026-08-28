@@ -178,8 +178,6 @@ name = "Avery"
 print("Hello", name)  # Prints `Hello Avery`
 ```
 
-## Variables
-
 What will this code print out?
 
 ```py
@@ -234,7 +232,17 @@ name = "Avery"
 print(f"Good {time}, {name}!")  # Prints `Good morning, Avery!`
 ```
 
-- String input
+## String Input
+
+We can use the `input` function to get text input from the **user** (a person
+who is using our program).
+
+```py
+name = input(
+    "What is your name? "
+)  # Prompts the user for their name (note the trailing space)
+print("Hello", name)  # Greets the user
+```
 
 **Problems**
 
