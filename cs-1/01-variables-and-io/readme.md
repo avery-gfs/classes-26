@@ -169,7 +169,7 @@ NameError: name 'Print' is not defined. Did you mean: 'print'?
 **Variables** give us a way to associate a value with a name. Using variables is
 integral to programming.
 
-Do define a variable, we put the name of the variable we're defining on the left
+To define a variable, we put the name of the variable we're defining on the left
 hand side of an `=` sign, and the value we're giving the variable on the right
 hand side.
 
@@ -234,10 +234,6 @@ name = "Avery"
 print(f"Good {time}, {name}!")  # Prints `Good morning, Avery!`
 ```
 
-- Variable names
-- Printing variables
-- Printing variables with format strings
-- Errors and debugging
 - String input
 
 **Problems**
