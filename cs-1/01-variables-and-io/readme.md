@@ -268,16 +268,12 @@ Avery is 12 years old.
 
 Write code that builds an APA book citation given:
 
-- Book author
-- Book title
+- Author
+- Title
 - Publication year
 - Publisher
 
-Format:
-
-```
-Author. (Year). Title of Book. Publisher.
-```
+Format: `Author. (Year). Title of Book. Publisher.`
 
 Example:
 
