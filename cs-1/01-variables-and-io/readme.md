@@ -75,12 +75,13 @@ When we write code, we inevitably make mistakes that cause **errors**. Let's
 look at some of the common mistakes programmers error messages these mistakes
 will generate.
 
-|Term | Definition | |-| | Error | An error occurs when a computer receives
-instructions that it can't understand | | Syntax Errors | an error caused by
-leaving out or adding extra symbols in code| | Name Errors | an error caused by
-an incorrect or misspelled name| | Crash | when a computer encounters an error
-while running a program, the computer will typically crash (stop running) the
-program |
+| Term          | Definition                                                                                                                |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Error         | An error occurs when a computer receives instructions that it can't                                                       |
+| understand    |                                                                                                                           |
+| Syntax Errors | an error caused by leaving out or adding extra symbols in code                                                            |
+| Name Errors   | an error caused by an incorrect or misspelled name                                                                        |
+| Crash         | when a computer encounters an error while running a program, the computer will typically crash (stop running) the program |
 
 **Error**: an error occurs when a computer receives instructions that it can't
 understand.
