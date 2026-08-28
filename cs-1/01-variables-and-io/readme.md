@@ -261,7 +261,7 @@ What is your age? 12
 ```
 
 ```
-Avery is 12 years old.
+Avery is 12 years old
 ```
 
 ## Citations
