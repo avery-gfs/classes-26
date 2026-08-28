@@ -1,4 +1,4 @@
-# CS-1: Output, Variables, and Input
+# Output, Variables, and Input
 
 ## Comments
 

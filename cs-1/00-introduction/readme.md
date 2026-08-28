@@ -1,4 +1,4 @@
-# CS-1: Introduction
+# Introduction
 
 ## Hello World!
 
