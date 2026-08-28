@@ -52,7 +52,8 @@ print("Greetings from Python")
 print("Let's write some code")
 ```
 
----
+<details>
+  <summary><strong>Show Answer</strong></summary>
 
 This program displays the three messages in the `print` instructions, in the
 order that they are written.
@@ -62,6 +63,8 @@ Hello world!
 Greetings from Python
 Let's write some code
 ```
+
+</details>
 
 ## Programming Languages
 
