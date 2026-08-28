@@ -283,6 +283,8 @@ What is your name?Avery
 
 ## Problem: Name and Grade
 
+name-and-age/problem.py
+
 Write code that asks the user for their name and age and prints a message
 containing both.
 
@@ -296,6 +298,8 @@ Avery is 12 years old
 ```
 
 ## Problem: Citations
+
+apa-citations/problem.py
 
 Write code that builds an APA book citation given:
 
@@ -320,6 +324,8 @@ Tate, B. A. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf
 ```
 
 ## Problem: Mad Libs
+
+madlibs/problem.py
 
 Inputs
 
