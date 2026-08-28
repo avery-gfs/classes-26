@@ -19,6 +19,7 @@ Hello world!
 
 Congratulations, you are now a computer programmer!
 
+> [!TIP]
 > **Type out these examples!**
 >
 > As you go through these examples, I highly recommend typing out the code into
@@ -69,17 +70,17 @@ general-purpose programming language. While this book will teach you to write
 programs using Python, the concepts that it covers will be relevant when using a
 wide variety of programming languages.
 
-General programming terminology:
+## Some programming terminology
 
-- **Program**: a sequence of instructions that tells a computer how to perform a
-  task.
+**Program**: a sequence of instructions that tells a computer how to perform a
+task.
 
-- **Code**: the text that contains the instructions for a program.
+**Code**: the text that contains the instructions for a program.
 
-- **Running** a program: telling the computer to perform the instructions in a
-  program.
+**Running** a program: telling the computer to perform the instructions in a
+program.
 
-- **Programming Language**: a programming language determines the format and
-  rules that our program must follow when written out as code.
+**Programming Language**: a programming language determines the format and rules
+that our program must follow when written out as code.
 
-- **Python**: the programming language that we'll be using in this course.
+**Python**: the programming language that we'll be using in this course.
