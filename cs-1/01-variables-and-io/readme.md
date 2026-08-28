@@ -221,8 +221,6 @@ print("Good", time, ",", name, "!")
 Good morning , Avery !
 ```
 
-## Format Strings
-
 We can use **format strings** (f-strings) to be more precise about how we
 display variables.
 
@@ -238,10 +236,15 @@ We can use the `input` function to get text input from the **user** (a person
 who is using our program).
 
 ```py
-name = input(
-    "What is your name? "
-)  # Prompts the user for their name (note the trailing space)
+# Prompts the user for their name (note the trailing space)
+name = input("What is your name? ")
+
 print("Hello", name)  # Greets the user
+```
+
+```
+What is your name? Avery
+Hello Avery
 ```
 
 **Problems**
