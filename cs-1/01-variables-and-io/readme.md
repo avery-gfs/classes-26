@@ -281,9 +281,7 @@ There would be no space between the prompt and the user input.
 What is your name?Avery
 ```
 
-## Problem: Name and Grade
-
-name-and-age/problem.py
+## Problem: [Name and Age](name-and-age)
 
 Write code that asks the user for their name and age and prints a message
 containing both.
@@ -297,9 +295,7 @@ What is your age? 12
 Avery is 12 years old
 ```
 
-## Problem: Citations
-
-apa-citations/problem.py
+## Problem: [Citations](apa-citations)
 
 Write code that builds an APA book citation given:
 
@@ -323,9 +319,7 @@ Publisher: The Pragmatic Bookshelf
 Tate, B. A. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf
 ```
 
-## Problem: Mad Libs
-
-madlibs/problem.py
+## Problem: [Mad Libs](madlibs)
 
 Inputs
 
