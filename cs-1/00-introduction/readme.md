@@ -66,7 +66,7 @@ Let's write some code
 ## Programming Languages
 
 In the same way that there are many spoken languages (English, Mandarin, Hindi,
-etc), there are many **aprogramming languages**. Different languages have
+etc), there are many **programming languages**. Different languages have
 different strengths and weaknesses.
 
 In this course we'll be writing our programs using **Python**, a popular,
