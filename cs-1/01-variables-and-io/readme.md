@@ -237,12 +237,11 @@ Good morning, Avery!
 ## String Input
 
 We can use the `input` function to get text input from the **user** (a person
-who is using our program).
+who is using our program). We can call `input` with a prompt argument that it
+will show to the user.
 
 ```py
-# Prompts the user for their name (note the trailing space)
-name = input("What is your name? ")
-
+name = input("What is your name? ")  # Prompts the user for their name
 print("Hello", name)  # Greets the user
 ```
 
@@ -258,7 +257,29 @@ Output
 Hello Avery
 ```
 
-## Name and Grade
+## Prompt Trailing Space
+
+Notice that the prompt string has an extra space at the end.
+
+```py
+name = input("What is your name? ")
+```
+
+What would happend if we left this space out?
+
+```py
+name = input("What is your name?")
+```
+
+---
+
+There would be no space between the prompt and the user input.
+
+```
+What is your name?Avery
+```
+
+## Problem: Name and Grade
 
 Write code that asks the user for their name and age and prints a message
 containing both.
@@ -272,7 +293,7 @@ What is your age? 12
 Avery is 12 years old
 ```
 
-## Citations
+## Problem: Citations
 
 Write code that builds an APA book citation given:
 
@@ -296,7 +317,7 @@ Publisher: The Pragmatic Bookshelf
 Tate, B. A. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf
 ```
 
-## Mad Libs
+## Problem: Mad Libs
 
 Inputs
 
