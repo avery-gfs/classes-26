@@ -227,7 +227,11 @@ display variables.
 ```py
 time = "morning"
 name = "Avery"
-print(f"Good {time}, {name}!")  # Prints `Good morning, Avery!`
+print(f"Good {time}, {name}!")
+```
+
+```
+Good morning, Avery!
 ```
 
 ## String Input
