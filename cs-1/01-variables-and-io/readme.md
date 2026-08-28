@@ -75,19 +75,27 @@ When we write code, we inevitably make mistakes that cause **errors**. Let's
 look at some of the common mistakes programmers error messages these mistakes
 will generate.
 
-Error related terminology:
+|Term | Definition | |-| | Error | An error occurs when a computer receives
+instructions that it can't understand | | Syntax Errors | an error caused by
+leaving out or adding extra symbols in code| | Name Errors | an error caused by
+an incorrect or misspelled name| | Crash | when a computer encounters an error
+while running a program, the computer will typically crash (stop running) the
+program |
 
 **Error**: an error occurs when a computer receives instructions that it can't
 understand.
 
-**Syntax Errors**: errors caused by leaving out or adding extra symbols in code.
+**Syntax Error**: an error caused by leaving out or adding extra symbols in
+code.
 
-**Name Errors**: errors caused by an incorrect or misspelled name.
+**Name Error**: an error caused by an incorrect or misspelled name.
 
 **Crash**: when a computer encounters an error while running a program, the
 computer will typically crash (stop running) the program.
 
 ### Issue 1
+
+What's the issue?
 
 ```py
 print "Hello world!"
@@ -106,6 +114,8 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 
 ### Issue 2
 
+What's the issue?
+
 ```py
 print(Hello world!)
 ```
@@ -123,6 +133,8 @@ SyntaxError: invalid syntax. Perhaps you forgot a comma?
 
 ### Issue 3
 
+What's the issue?
+
 ```py
 print("Hello world!)
 ```
@@ -139,6 +151,8 @@ SyntaxError: unterminated string literal (detected at line 1)
 ```
 
 ### Issue 4
+
+What's the issue?
 
 ```py
 Print("Hello world!")
