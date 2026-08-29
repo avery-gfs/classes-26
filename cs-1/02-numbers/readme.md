@@ -115,6 +115,20 @@ What value does this code produce?
 3
 ```
 
+---
+
+What value does this code produce?
+
+```py
+-7 / 2
+```
+
+---
+
+```
+-4
+```
+
 ## Exponentiation
 
 What value does this code produce?
