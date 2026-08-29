@@ -1,5 +1,12 @@
 # Avery's CS Notes
 
+## Courses
+
+- [CS 1: Introduction to Programming](cs-1)
+- [CS 2: Data Processing and Practical Applications](cs-2)
+- [CS 3: Algorithms, Data Structures, and Problem Solving](cs-3)
+- [CS Capstone: Real-World Software Engineering](cs-capstone)
+
 ## Why Learn to Write Software?
 
 Because it's fun and challenging. Because it helps us build interesting and
@@ -16,10 +23,3 @@ solving and expand our ability to tackle complexity.
 And it lets use make cool ASCII art.
 
 ![](assets/ascii-dali.png)
-
-## Courses
-
-- [CS 1: Introduction to Programming](cs-1)
-- [CS 2: Data Processing and Practical Applications](cs-2)
-- [CS 3: Algorithms, Data Structures, and Problem Solving](cs-3)
-- [CS Capstone: Real-World Software Engineering](cs-capstone)
