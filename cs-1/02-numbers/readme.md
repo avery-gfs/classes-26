@@ -103,6 +103,8 @@ Floor division rounds down to the nearest whole number.
 
 ---
 
+What value does this expression produce?
+
 ```py
 7 // 2
 ```
@@ -114,6 +116,8 @@ Floor division rounds down to the nearest whole number.
 ```
 
 ---
+
+What value does this expression produce?
 
 ```py
 -7 // 2
@@ -143,8 +147,6 @@ What value does this expression produce?
 
 What value does this expression produce?
 
-===
-
 ```py
 11 % 2
 ```
@@ -160,6 +162,8 @@ The modulo operator in Python computes the remainder using
 
 ---
 
+What value does this expression produce?
+
 ```py
 14 % 1
 ```
@@ -171,6 +175,8 @@ The modulo operator in Python computes the remainder using
 ```
 
 ---
+
+What value does this expression produce?
 
 ```py
 14 % 2
@@ -184,6 +190,8 @@ The modulo operator in Python computes the remainder using
 
 ---
 
+What value does this expression produce?
+
 ```py
 14 % 5
 ```
@@ -196,6 +204,8 @@ The modulo operator in Python computes the remainder using
 
 ---
 
+What value does this expression produce?
+
 ```py
 14 % 14
 ```
@@ -207,6 +217,8 @@ The modulo operator in Python computes the remainder using
 ```
 
 ---
+
+What value does this expression produce?
 
 ```py
 14 % 20
