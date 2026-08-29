@@ -62,13 +62,12 @@ symbol-names
 
 **Problems**
 
-- Quadratic formula
+- Unit conversion
+- Dog years
+- Check valid input
+- Age checker
 - Distance formula
 - Line equation from two points
-- Unit conversion
-- Check valid input
-- Dog years
-- Age checker
 
 ### Booleans and Conditionals
 
