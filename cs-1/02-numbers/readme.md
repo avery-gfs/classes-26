@@ -2,8 +2,8 @@
 
 ## Ints and Floats
 
-Numbers in Python come in two main forms: **integers** (whole numbers) and
-**floats** (numbers with decimal points).
+Numbers in Python come in two main forms: **ints** (integers, aka whole numbers)
+and **floats** (floating-point numbers, aka numbers with decimal points).
 
 ```py
 speed_limit = 35    # An integer (a whole number)
