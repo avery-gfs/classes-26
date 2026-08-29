@@ -843,6 +843,8 @@ Always keep a large supply of <substance> in your car for passengers to enjoy.
 
 ---
 
+Output
+
 ```
 When buying a used car, remember: never cook the engine if the car is spicy.
 Before driving, make sure the gas tank is free of frogs.
