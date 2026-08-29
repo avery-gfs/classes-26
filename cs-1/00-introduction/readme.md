@@ -82,8 +82,8 @@ general-purpose programming language.
 That being said, the concepts we'll learn will be relevant when using a wide
 variety of programming languages.
 
--**Programming Language**: a way of writing code, using a specific set of
-instructions and following certain rules.
+- **Programming Language**: a way of writing code, using a specific set of
+  instructions and following certain rules.
 
 - **Python**: the programming language that we'll be using in this course.
 

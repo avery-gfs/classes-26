@@ -9,12 +9,12 @@
 #
 # Example:
 #
-# Author: Tate, B. A.
+# Author: Tate, Bruce
 # Title: Seven Languages in Seven Weeks
 # Year: 2010
 # Publisher: The Pragmatic Bookshelf
 #
-# Tate, B. A. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf.
+# Tate, Bruce. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf.
 
 author = input("Author: ")
 title = input("Title: ")
