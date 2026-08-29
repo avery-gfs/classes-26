@@ -59,7 +59,7 @@ print("Greetings from Python")
 print("Let's write some code")
 ```
 
----
+...
 
 This program displays the three messages in the `print` instructions, in the
 order that they are written.

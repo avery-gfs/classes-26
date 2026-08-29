@@ -124,8 +124,6 @@ SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 
 ---
 
-What's the issue?
-
 ```py
 print(Hello world!)
 ```
@@ -143,8 +141,6 @@ SyntaxError: invalid syntax. Perhaps you forgot a comma?
 
 ---
 
-What's the issue?
-
 ```py
 print("Hello world!)
 ```
@@ -161,8 +157,6 @@ SyntaxError: unterminated string literal (detected at line 1)
 ```
 
 ---
-
-What's the issue?
 
 ```py
 Print("Hello world!")

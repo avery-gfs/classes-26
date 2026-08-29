@@ -21,7 +21,7 @@ What value does this expression produce?
 7 + 2
 ```
 
----
+...
 
 ```
 9
@@ -35,7 +35,7 @@ What value does this expression produce?
 7.1 - 2.5
 ```
 
----
+...
 
 ```
 4.6
@@ -49,7 +49,7 @@ What value does this expression produce?
 7.1 * -2
 ```
 
----
+...
 
 ```
 -14.2
@@ -63,7 +63,7 @@ What value does this expression produce?
 7 / 2
 ```
 
----
+...
 
 ```
 3.5
@@ -77,7 +77,7 @@ What value does this expression produce?
 7 / 1
 ```
 
----
+...
 
 Division produces a float!
 
@@ -93,7 +93,7 @@ What value does this expression produce?
 7 // 1
 ```
 
----
+...
 
 Floor division rounds down to the nearest whole number.
 
@@ -103,17 +103,25 @@ Floor division rounds down to the nearest whole number.
 
 ---
 
-What values do these expressions produce?
-
 ```py
-7 / 2
--7 / 2
+7 // 2
+```
+
+...
+
+```
+3
 ```
 
 ---
 
+```py
+-7 // 2
 ```
-3
+
+...
+
+```
 -4
 ```
 
@@ -125,7 +133,7 @@ What value does this expression produce?
 7**2
 ```
 
----
+...
 
 ```
 49
@@ -139,7 +147,7 @@ What value does this expression produce?
 11 % 2
 ```
 
----
+...
 
 The modulo operator in Python computes the remainder using
 [floored division](https://en.wikipedia.org/wiki/Modulo#Variants_of_the_definition).
@@ -150,22 +158,62 @@ The modulo operator in Python computes the remainder using
 
 ---
 
-What values do these expressions produce?
-
 ```py
 14 % 1
+```
+
+...
+
+```
+0
+```
+
+---
+
+```py
 14 % 2
+```
+
+...
+
+```
+0
+```
+
+---
+
+```py
 14 % 5
 14 % 14
 14 % 20
 ```
 
+...
+
+```
+4
+```
+
 ---
+
+```py
+14 % 14
+```
+
+...
 
 ```
 0
-0
-4
-0
+```
+
+---
+
+```py
+14 % 20
+```
+
+...
+
+```
 14
 ```
