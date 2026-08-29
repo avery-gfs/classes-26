@@ -313,7 +313,7 @@ will show to the user.
 
 ```py
 name = input("What is your name? ")  # Prompts the user for their name
-print("Hello", name)  # Greets the user
+print(f"Hello {name}")  # Greets the user
 ```
 
 User input
@@ -390,6 +390,8 @@ Tate, B. A. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf.
 
 ## Problem: Mad Libs
 
+Write a Mad Libs generator.
+
 Inputs
 
 ```
@@ -399,17 +401,6 @@ plural noun: frogs
 number: 2
 number: 200
 substance: rice pudding
-```
-
----
-
-Template
-
-```
-When buying a used car, remember: never <verb> the engine if the car is <adjective>.
-Before driving, make sure the gas tank is free of <plural noun>.
-Used cars perform best when driven between <number> and <number> miles per hour.
-Always keep a large supply of <substance> in your car for passengers to enjoy.
 ```
 
 ---
