@@ -213,47 +213,16 @@ Good morning Avery
 
 ## Variable Names
 
-Variable names may contain letters, digits, and underscores (`_`), but may not
+Variable names may contain letters, digits, and underscores (`_`), but must not
 start with a digit. Names are case sensitive.
 
 ```py
 first_name = "Avery"  # OK
-first name = "Avery"  # ERROR: names may not contain spaces
-1stname = "Avery"     # ERROR: names may not start with a digit
+first name = "Avery"  # ERROR: names must not contain spaces
+1stname = "Avery"     # ERROR: names must not start with a digit
 ```
 
 _Come up with some examples of valid and invalid variables names._
-
-## Format Strings
-
-What will this code print out?
-
-```py
-time = "morning"
-name = "Avery"
-print("Good", time, ",", name, "!")
-```
-
-...
-
-```
-Good morning , Avery !
-```
-
-...
-
-We can use **format strings** (f-strings) to be more precise about how we
-display variables.
-
-```py
-time = "morning"
-name = "Avery"
-print(f"Good {time}, {name}!")
-```
-
-```
-Good morning, Avery!
-```
 
 ## Variables Practice
 
@@ -304,6 +273,41 @@ print(color)
 ```
 green
 ```
+
+## Format Strings
+
+What will this code print out?
+
+```py
+time = "morning"
+name = "Avery"
+print("Good", time, ",", name, "!")
+```
+
+...
+
+```
+Good morning , Avery !
+```
+
+...
+
+We can use **format strings** (f-strings) to be more precise about how we
+display variables.
+
+```py
+time = "morning"
+name = "Avery"
+print(f"Good {time}, {name}!")
+```
+
+```
+Good morning, Avery!
+```
+
+Format strings start with an `f` and can contain variable names wrapped in curly
+brackets `{}`. These bracketed variable names get replaced with the values the
+variables.
 
 ## String Input
 
