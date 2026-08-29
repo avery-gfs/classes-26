@@ -1,30 +1,109 @@
-Output, Variables, and Input Numbers Booleans and Conditionals While Loops
-Randomness Lists Strings as Sequences For Loops Files Calling Functions and
-Methods Nested Loops Imports and the Math Library Turtle Graphics Timing
+- Output, Variables, and Input
+- Numbers
+- Booleans and Conditionals
+- While Loops
+- Randomness
+- Lists
+- Strings as Sequences
+- For Loops
+- Files
+- Calling Functions and Methods
+- Nested Loops
+- Imports and the Math Library
+- Turtle Graphics
+- Timing
 
-images dictionaries oop duration times heights data visualization binary and hex
-game of life polars simulation codes Defining Functions (to do, player) Data
-Wrangling Sets and Tuples Modulo Nested Lists and Grids morse scorigami
+- images
+- dictionaries
+- oop
+- duration
+- times
+- heights
+- data
+- visualization
+- binary and hex
+- game of life
+- polars
+- simulation
+- codes
+- Defining Functions (to do, player)
+- Data Wrangling
+- Sets and Tuples
+- Modulo
+- Nested Lists and Grids
+- morse
+- scorigami
 
-problem solving fibonacci recursion cartesian product tilings sorting search
-refactoring tooling random gen stacks vm c closures, scope design principles
-sierpinski
+- problem solving
+- fibonacci
+- recursion
+- cartesian product
+- tilings
+- sorting
+- search
+- refactoring
+- tooling
+- random gen
+- stacks
+- vm
+- c
+- closures, scope
+- design principles
+- sierpinski
 
-flatten concurrency lattice regex-impl scope sudoku change ghost linked-list
-currency-conversion rates min-max towers binary-search clustering ring-buffer
-tail-recursion filter invariants metro shuffle stack amortized trees greedy -
-coins dp - bins k means max flow - scheduling
+- flatten
+- concurrency
+- lattice
+- regex-impl
+- scope
+- sudoku
+- change
+- ghost
+- linked-list
+- currency-conversion rates
+- min-max
+- towers
+- binary-search
+- clustering
+- ring-buffer
+- tail-recursion
+- filter
+- invariants
+- metro
+- shuffle
+- stack
+- amortized
+- trees
+- greedy - coins
+- dp - bins
+- k means
+- max flow - scheduling
 
-shortest path queues graphs wikipedia
+- shortest path
+- queues
+- graphs
+- wikipedia
 
-robo-nav regex code-review Game of Life and Emergence Files, Formats, and
-Failure Generating Files Problem Solving and Pseudocode Sorting and Correctness
-Recursion Search and Backtracking Data Structures Objects and Value Types
-Functional Programming Design Principles and Refactoring Advanced Image
-Processing Numerical Simulation GFSsembly and the Machine Model Simulation and
-Monte Carlo
+- robo-nav
+- regex
+- code-review
+- Game of Life and Emergence
+- Files, Formats, and Failure
+- Generating Files
+- Problem Solving and Pseudocode
+- Sorting and Correctness
+- Recursion
+- Search and Backtracking
+- Data Structures
+- Objects and Value Types
+- Functional Programming
+- Design Principles and Refactoring
+- Advanced Image Processing
+- Numerical Simulation
+- GFSsembly and the Machine Model
+- Simulation and Monte Carlo
 
-symbol-names
+- symbol-names
 
 # Unified CS Sequence: CS1, CS2, CS3, and Capstone
 
