@@ -309,6 +309,43 @@ Format strings start with an `f` and can contain variable names wrapped in curly
 brackets `{}`. These bracketed variable names get replaced with the values the
 variables.
 
+---
+
+What does this code print out?
+
+```py
+time = "morning"
+name = "Avery"
+print(f"Good {time}, name!")
+```
+
+...
+
+Second variable isn't in brackets, so it doesn't get filled in.
+
+```
+Good morning, name!
+```
+
+---
+
+What does this code print out?
+
+```py
+time = "morning"
+name = "Avery"
+print("Good {time}, {name}!")
+```
+
+...
+
+The string is missing the `f` prefix, so it's treated as a normal string, not a
+format string, and no variables get filled in.
+
+```
+Good {time}, {name}!
+```
+
 ## String Input
 
 We can use the `input` function to get text input from the **user** (a person
