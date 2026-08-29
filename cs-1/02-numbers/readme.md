@@ -6,7 +6,7 @@ Numbers in Python come in two main forms: **integers** (whole numbers) and
 **floats** (numbers with decimal points).
 
 ```py
-speed_limit = 35  # An integer (a whole number)
+speed_limit = 35    # An integer (a whole number)
 temperature = 98.6  # A float (a number with a decimal point)
 ```
 
@@ -15,7 +15,7 @@ temperature = 98.6  # A float (a number with a decimal point)
 
 ## Addition
 
-What value does this code produce?
+What value does this expression produce?
 
 ```py
 7 + 2
@@ -29,7 +29,7 @@ What value does this code produce?
 
 ## Subtraction
 
-What value does this code produce?
+What value does this expression produce?
 
 ```py
 7.1 - 2.5
@@ -43,7 +43,7 @@ What value does this code produce?
 
 ## Multiplication
 
-What value does this code produce?
+What value does this expression produce?
 
 ```py
 7 * -2
@@ -57,7 +57,7 @@ What value does this code produce?
 
 ## Division
 
-What value does this code produce?
+What value does this expression produce?
 
 ```py
 7 / 2
@@ -71,7 +71,7 @@ What value does this code produce?
 
 ---
 
-What value does this code produce?
+What value does this expression produce?
 
 ```py
 7 / 1
@@ -87,7 +87,7 @@ Division produces a float!
 
 ## Floor Division
 
-What value does this code produce?
+What value does this expression produce?
 
 ```py
 7 // 1
@@ -103,35 +103,23 @@ Floor division rounds down to the nearest whole number.
 
 ---
 
-What value does this code produce?
+What value does these expressions produce?
 
 ```py
 7 / 2
-```
-
----
-
-```
-3
-```
-
----
-
-What value does this code produce?
-
-```py
 -7 / 2
 ```
 
 ---
 
 ```
+3
 -4
 ```
 
 ## Exponentiation
 
-What value does this code produce?
+What value does this expression produce?
 
 ```py
 7**2
@@ -145,7 +133,7 @@ What value does this code produce?
 
 ## Modulo
 
-What value does this code produce?
+What value does this expression produce?
 
 ```py
 11 % 2
