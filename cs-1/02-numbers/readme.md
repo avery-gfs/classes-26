@@ -46,13 +46,13 @@ What value does this expression produce?
 What value does this expression produce?
 
 ```py
-7 * -2
+7.1 * -2
 ```
 
 ---
 
 ```
--14
+-14.2
 ```
 
 ## Division
@@ -103,7 +103,7 @@ Floor division rounds down to the nearest whole number.
 
 ---
 
-What value does these expressions produce?
+What values do these expressions produce?
 
 ```py
 7 / 2
@@ -141,8 +141,8 @@ What value does this expression produce?
 
 ---
 
-The modulo operator computes the
-[floored remainder](https://en.wikipedia.org/wiki/Modulo#Variants_of_the_definition).
+The modulo operator in Python computes the remainder using
+[floored division](https://en.wikipedia.org/wiki/Modulo#Variants_of_the_definition).
 
 ```
 1
@@ -150,7 +150,7 @@ The modulo operator computes the
 
 ---
 
-What value do each of these expression produce?
+What values do these expressions produce?
 
 ```py
 14 % 1
