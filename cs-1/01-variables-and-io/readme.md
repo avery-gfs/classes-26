@@ -369,7 +369,7 @@ Output
 Hello Avery
 ```
 
-- **user**: a pwerson who is using our program.
+- **user**: a person who is using our program.
 
 ## Prompt Trailing Space
 
