@@ -103,7 +103,7 @@ Some common types of errors you'll encounter:
 - **Crash**: when a computer encounters an error while running a program, the
   computer will typically crash (stop running) the program.
 
-### Issue 1
+### Issue Practice
 
 What's the issue?
 
@@ -122,7 +122,7 @@ Issue: missing parentheses.
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 ```
 
-### Issue 2
+### Issue Practice
 
 What's the issue?
 
@@ -141,7 +141,7 @@ Issue: missing quotes.
 SyntaxError: invalid syntax. Perhaps you forgot a comma?
 ```
 
-### Issue 3
+### Issue Practice
 
 What's the issue?
 
@@ -160,7 +160,7 @@ Issue: missing closing quote.
 SyntaxError: unterminated string literal (detected at line 1)
 ```
 
-### Issue 4
+### Issue Practice
 
 What's the issue?
 
@@ -408,7 +408,7 @@ substance: rice pudding
 Output
 
 ```
-When buying a used car, remember: never cook the engine if the car is spicy.
+When operating a used car, remember: never cook the engine if the car is spicy.
 Before driving, make sure the gas tank is free of frogs.
 Used cars perform best when driven between 2 and 200 miles per hour.
 Always keep a large supply of rice pudding in your car for passengers to enjoy.
