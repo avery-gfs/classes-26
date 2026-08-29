@@ -79,11 +79,11 @@ What value does this expression produce?
 
 ...
 
-Division produces a float!
-
 ```
 1.0
 ```
+
+Division produces a float!
 
 ## Floor Division
 
@@ -95,11 +95,11 @@ What value does this expression produce?
 
 ...
 
-Floor division rounds down to the nearest integer.
-
 ```
 1
 ```
+
+Floor division rounds down to the nearest integer.
 
 ---
 
@@ -125,11 +125,11 @@ What value does this expression produce?
 
 ...
 
-Remember that float division rounds _down_, not _towards zero_.
-
 ```
 -4
 ```
+
+Remember that float division rounds _down_, not _towards zero_.
 
 ## Exponentiation
 
