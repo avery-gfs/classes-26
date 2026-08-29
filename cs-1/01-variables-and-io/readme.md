@@ -64,7 +64,7 @@ What happens if we call `print` with no arguments?
 print()
 ```
 
----
++++
 
 It prints an empty line.
 
@@ -78,7 +78,7 @@ print()
 print("a", "b", "c")
 ```
 
----
++++
 
 ```
 Hello
@@ -111,7 +111,7 @@ What's the issue?
 print "Hello world!"
 ```
 
----
++++
 
 Issue: missing parentheses.
 
@@ -122,7 +122,7 @@ Issue: missing parentheses.
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 ```
 
-## Issue Practice
+---
 
 What's the issue?
 
@@ -130,7 +130,7 @@ What's the issue?
 print(Hello world!)
 ```
 
----
++++
 
 Issue: missing quotes.
 
@@ -143,15 +143,13 @@ SyntaxError: invalid syntax. Perhaps you forgot a comma?
 
 ---
 
----
-
 What's the issue?
 
 ```py
 print("Hello world!)
 ```
 
----
++++
 
 Issue: missing closing quote.
 
@@ -162,7 +160,7 @@ Issue: missing closing quote.
 SyntaxError: unterminated string literal (detected at line 1)
 ```
 
-## Issue Practice
+---
 
 What's the issue?
 
@@ -170,7 +168,7 @@ What's the issue?
 Print("Hello world!")
 ```
 
----
++++
 
 Issue: incorrect function name. Programming languages are picky about spelling
 and capitalization.
@@ -207,7 +205,7 @@ name = "Avery"
 print("Good", time, name)
 ```
 
----
++++
 
 ```
 Good morning Avery
@@ -236,13 +234,13 @@ name = "Avery"
 print("Good", time, ",", name, "!")
 ```
 
----
++++
 
 ```
 Good morning , Avery !
 ```
 
----
++++
 
 We can use **format strings** (f-strings) to be more precise about how we
 display variables.
@@ -257,7 +255,7 @@ print(f"Good {time}, {name}!")
 Good morning, Avery!
 ```
 
-## Variables Practice 1
+## Variables Practice
 
 What will this code print out?
 
@@ -268,14 +266,14 @@ color = "red"
 print(color)
 ```
 
----
++++
 
 ```
 green
 red
 ```
 
-## Variables Practice 2
+---
 
 What will this code print out?
 
@@ -285,13 +283,13 @@ color = "red"
 print(color)
 ```
 
----
++++
 
 ```
 red
 ```
 
-## Variables Practice 3
+---
 
 What will this code print out?
 
@@ -301,7 +299,7 @@ color = "green"
 print(color)
 ```
 
----
++++
 
 ```
 green
@@ -344,7 +342,7 @@ What would happend if we left this space out?
 name = input("What is your name?")
 ```
 
----
++++
 
 There would be no space between the prompt and the user input.
 
@@ -405,7 +403,7 @@ number: 200
 substance: rice pudding
 ```
 
----
++++
 
 Output
 
