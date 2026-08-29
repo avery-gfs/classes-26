@@ -369,6 +369,8 @@ Output
 Hello Avery
 ```
 
+- **user**: a pwerson who is using our program.
+
 ## Prompt Trailing Space
 
 Notice that the prompt string has an extra space at the end.
