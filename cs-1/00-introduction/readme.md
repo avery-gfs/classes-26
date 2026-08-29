@@ -39,9 +39,10 @@ a single instruction.
 print("Hello world!")
 ```
 
-> - **Program**: a sequence of instructions that tells a computer how to perform
->   a task.
-> - **Code**: the instructions in a program.
+- **Program**: a sequence of instructions that tells a computer how to perform a
+  task.
+
+- **Code**: the instructions in a program.
 
 ## Running Code
 
