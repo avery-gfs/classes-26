@@ -103,7 +103,7 @@ Some common types of errors you'll encounter:
 - **Crash**: when a computer encounters an error while running a program, the
   computer will typically crash (stop running) the program.
 
-## 
+## Issue Practice
 
 What's the issue?
 
@@ -122,7 +122,7 @@ Issue: missing parentheses.
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
 ```
 
-## 
+## Issue Practice
 
 What's the issue?
 
@@ -141,7 +141,9 @@ Issue: missing quotes.
 SyntaxError: invalid syntax. Perhaps you forgot a comma?
 ```
 
-## 
+---
+
+---
 
 What's the issue?
 
@@ -160,7 +162,7 @@ Issue: missing closing quote.
 SyntaxError: unterminated string literal (detected at line 1)
 ```
 
-## 
+## Issue Practice
 
 What's the issue?
 
