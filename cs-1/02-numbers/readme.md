@@ -153,19 +153,19 @@ The modulo operator computes the
 What value do each of these expression produce?
 
 ```py
-11 % 1
-11 % 2
-11 % 4
-11 % 11
-11 % 20
+14 % 1
+14 % 2
+14 % 5
+14 % 14
+14 % 20
 ```
 
 ---
 
 ```
 0
-1
-3
 0
-11
+4
+0
+14
 ```
