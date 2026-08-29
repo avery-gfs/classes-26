@@ -64,7 +64,7 @@ What happens if we call `print` with no arguments?
 print()
 ```
 
-+++
+...
 
 It prints an empty line.
 
@@ -78,7 +78,7 @@ print()
 print("a", "b", "c")
 ```
 
-+++
+...
 
 ```
 Hello
@@ -111,7 +111,7 @@ What's the issue?
 print "Hello world!"
 ```
 
-+++
+...
 
 Issue: missing parentheses.
 
@@ -130,7 +130,7 @@ What's the issue?
 print(Hello world!)
 ```
 
-+++
+...
 
 Issue: missing quotes.
 
@@ -149,7 +149,7 @@ What's the issue?
 print("Hello world!)
 ```
 
-+++
+...
 
 Issue: missing closing quote.
 
@@ -168,7 +168,7 @@ What's the issue?
 Print("Hello world!")
 ```
 
-+++
+...
 
 Issue: incorrect function name. Programming languages are picky about spelling
 and capitalization.
@@ -205,7 +205,7 @@ name = "Avery"
 print("Good", time, name)
 ```
 
-+++
+...
 
 ```
 Good morning Avery
@@ -234,13 +234,13 @@ name = "Avery"
 print("Good", time, ",", name, "!")
 ```
 
-+++
+...
 
 ```
 Good morning , Avery !
 ```
 
-+++
+...
 
 We can use **format strings** (f-strings) to be more precise about how we
 display variables.
@@ -266,7 +266,7 @@ color = "red"
 print(color)
 ```
 
-+++
+...
 
 ```
 green
@@ -283,7 +283,7 @@ color = "red"
 print(color)
 ```
 
-+++
+...
 
 ```
 red
@@ -299,7 +299,7 @@ color = "green"
 print(color)
 ```
 
-+++
+...
 
 ```
 green
@@ -342,7 +342,7 @@ What would happend if we left this space out?
 name = input("What is your name?")
 ```
 
-+++
+...
 
 There would be no space between the prompt and the user input.
 
@@ -403,7 +403,7 @@ number: 200
 substance: rice pudding
 ```
 
-+++
+...
 
 Output
 
