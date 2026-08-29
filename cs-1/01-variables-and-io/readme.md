@@ -32,6 +32,14 @@ print("Hello world!")  # Prints `Hello world!`
 When we use a function to perform a task in our code, programmers say that we
 **call** the function.
 
+> **Function**: an instruction that tells our program to perform a certain task.
+>
+> **Calling** a function: writing the name of a function followed by
+> parentheses, which tells the computer to perform the action associated with
+> that function.
+>
+> **String**: a piece of text.
+
 ## Multiple Arguments
 
 The values that we give a function when we call it are known as **arguments**.
@@ -45,6 +53,10 @@ together, with a space in between.
 ```py
 print("Hello", "Avery")  # Prints `Hello Avery`
 ```
+
+> **Arguments**: zero or more values placed between the parentheses when calling
+> a function, that provide the function with information on how to perform its
+> task. Multiple arguments require commas in between.
 
 ## No Arguments
 
@@ -75,17 +87,6 @@ Hello
 
 a b c
 ```
-
-## Function Calls and Terminology
-
-**Function**: an instruction that tells our program to perform a certain task.
-
-**Calling** a function: writing the name of a function followed by parentheses,
-which tells the computer to perform the action associated with that function.
-
-**Arguments**: zero or more values placed between the parentheses when calling a
-function, that provide the function with information on how to perform its task.
-Multiple arguments require commas in between.
 
 ## Errors
 
@@ -207,6 +208,8 @@ integral to programming.
 To define a variable, we put the name of the variable we're defining on the left
 hand side of an `=` sign, and the value we're giving the variable on the right
 hand side.
+
+> **Variables**: names that are attached to values.
 
 ```py
 name = "Avery"
