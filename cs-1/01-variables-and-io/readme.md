@@ -271,7 +271,7 @@ print(f"Good {time}, {name}!")
 Good morning, Avery!
 ```
 
-## Redefining Variables
+## Variables Practice 1
 
 What will this code print out?
 
@@ -289,7 +289,7 @@ green
 red
 ```
 
----
+## Variables Practice 2
 
 What will this code print out?
 
@@ -305,7 +305,7 @@ print(color)
 red
 ```
 
----
+## Variables Practice 3
 
 What will this code print out?
 
