@@ -6,7 +6,7 @@ Numbers in Python come in two main forms: **ints** (integers, aka whole numbers)
 and **floats** (floating-point numbers, aka numbers with decimal points).
 
 ```py
-speed_limit = 35    # An integer (a whole number)
+speed_limit = 35    # An int (a whole number)
 temperature = 98.6  # A float (a number with a decimal point)
 ```
 
@@ -74,7 +74,7 @@ What value does this expression produce?
 What value does this expression produce?
 
 ```py
-7 / 1
+7 / 7
 ```
 
 ...
@@ -90,12 +90,12 @@ Division produces a float!
 What value does this expression produce?
 
 ```py
-7 // 1
+7 // 7
 ```
 
 ...
 
-Floor division rounds down to the nearest whole number.
+Floor division rounds down to the nearest integer.
 
 ```
 1
@@ -124,6 +124,8 @@ What value does this expression produce?
 ```
 
 ...
+
+Remember that float division rounds _down_, not _towards zero_.
 
 ```
 -4
