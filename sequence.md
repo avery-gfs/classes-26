@@ -50,13 +50,13 @@ symbol-names
 ### Numbers
 
 - Numbers
-- Basic numerical operators (`+ - * / // ** %`)
 - Integers vs. floats
-- Reading and converting numerical input
-- Type errors
+- Basic numerical operators (`+ - * / // ** %`)
 - Inequality operators
 - Numerical functions (`round`, `abs`, `floor`, `ceil`)
 - Banker's rounding
+- Reading and converting numerical input
+- Type errors
 - Validating user input
 - Default inputs
 
