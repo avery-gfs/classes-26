@@ -49,7 +49,7 @@ print("Hello world!")
 When we **run** a computer program, the computer goes through the instructions
 in our code in order from the start of the program to the end.
 
-> **Running** a program: having a computer follow the instructions in a program.
+- **Running** a program: having a computer follow the instructions in a program.
 
 What will this code display?
 
@@ -82,10 +82,10 @@ general-purpose programming language.
 That being said, the concepts we'll learn will be relevant when using a wide
 variety of programming languages.
 
-> **Programming Language**: a way of writing code, using a specific set of
-> instructions and following certain rules.
->
-> **Python**: the programming language that we'll be using in this course.
+-**Programming Language**: a way of writing code, using a specific set of
+instructions and following certain rules.
+
+- **Python**: the programming language that we'll be using in this course.
 
 ## I Made a Programming Language!
 
