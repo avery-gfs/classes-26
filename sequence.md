@@ -144,8 +144,6 @@
 
 - Unit conversion
 - Dog years
-- Check valid input
-- Age checker
 - Distance formula
 - Line equation from two points
 

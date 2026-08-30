@@ -45,7 +45,7 @@ The values that we give a function when we call it are known as **arguments**.
 Some functions like `print` can accept a flexible number of arguments, separated
 by commas `,`. Others require a fixed number of arguments.
 
-If we call `print` with multiple strings, Python will display these string
+If we call `print` with multiple strings, Python will display these strings
 together, with a space in between.
 
 ```py
@@ -89,8 +89,6 @@ a b c
 ## Errors
 
 When we write code, we inevitably make mistakes that cause **errors**.
-
-Some common types of errors you'll encounter:
 
 - **Error**: an error occurs when a computer receives instructions that it can't
   understand.
@@ -306,8 +304,8 @@ Good morning, Avery!
 ```
 
 Format strings start with an `f` and can contain variable names wrapped in curly
-brackets `{}`. These bracketed variable names get replaced with the values the
-variables.
+brackets `{}`. These bracketed variable names get replaced with the values of
+the variables.
 
 ---
 
@@ -379,7 +377,7 @@ Notice that the prompt string has an extra space at the end.
 name = input("What is your name? ")
 ```
 
-What would happend if we left this space out?
+What would happen if we left this space out?
 
 ```py
 name = input("What is your name?")
@@ -421,14 +419,14 @@ Format: `Author. (Year). Title of Book. Publisher.`
 Example:
 
 ```
-Author: Tate, B. A.
+Author: Tate, Bruce
 Title: Seven Languages in Seven Weeks
 Year: 2010
 Publisher: The Pragmatic Bookshelf
 ```
 
 ```
-Tate, B. A. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf.
+Tate, Bruce. (2010). Seven Languages in Seven Weeks. The Pragmatic Bookshelf.
 ```
 
 ## Problem: Mad Libs
