@@ -187,8 +187,6 @@ y2: 6
 Distance: 5.0
 ```
 
----
-
 ```
 x1: 0
 y1: 0
@@ -220,17 +218,4 @@ Radius: 2
 ```
 Volume: 33.51
 Surface area: 50.27
-```
-
----
-
-```
-Radius: 3
-```
-
-The volume and surface area of a sphere are only equal when the radius is `3`.
-
-```
-Volume: 113.1
-Surface area: 113.1
 ```
