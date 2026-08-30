@@ -17,13 +17,13 @@ temperature = 98.6  # A float (a number with a decimal point)
 
 | Symbol | Operation      |
 | ------ | -------------- |
-| +      | addition       |
-| -      | subtraction    |
-| *      | multiplication |
-| /      | division       |
-| //     | floor division |
-| **     | exponentiation |
-| %      | modulo         |
+| `+`    | addition       |
+| `-`    | subtraction    |
+| `*`    | multiplication |
+| `/`    | division       |
+| `//`   | floor division |
+| `**`   | exponentiation |
+| `%`    | modulo         |
 
 These operators work on ints, floats, or a combination of both.
 
