@@ -156,6 +156,16 @@
 | `>`    | greater than             |
 | `>=`   | greater than or equal to |
 
+### Imports and the Math Library
+
+- `import`
+- The `math` library
+- Constants and functions from a module
+
+**Problems**
+
+- Geometry calculator — area, volume, perimeter, surface area
+
 ### Booleans and Conditionals
 
 - Booleans
@@ -299,16 +309,6 @@
 
 - Times table
 - Letter frequency
-
-### Imports and the Math Library
-
-- `import`
-- The `math` library
-- Constants and functions from a module
-
-**Problems**
-
-- Geometry calculator — area, volume, perimeter, surface area
 
 ### Turtle Graphics
 
