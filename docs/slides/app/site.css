@@ -43,28 +43,10 @@ a:focus-visible {
 
 /* List -------------------------------------------------------------------- */
 
-/* A two-column grid rather than a flex row per item, so the links line up in a
-   column of their own however long the unit paths are. */
 .decks {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  gap: 0 2rem;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.decks li {
-  display: contents;
-}
-
-.unit {
-  color: var(--fg);
-}
-
-.links {
-  display: flex;
-  gap: 1rem;
 }
 
 .status {

@@ -1,7 +1,14 @@
 {
+  "name": "classes",
+  "type": "module",
   "scripts": {
     "push": "./push",
     "fmt": "./fmt",
-    "slides": "node ../../slides/serve.js"
+    "serve": "node docs/slides/scripts/serve.js",
+    "test": "node docs/slides/scripts/test-github.js",
+    "vendor": "./docs/slides/scripts/vendor-reveal.sh"
+  },
+  "devDependencies": {
+    "reveal.js": "^5.2.1"
   }
 }

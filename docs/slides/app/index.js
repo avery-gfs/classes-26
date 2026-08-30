@@ -4,7 +4,6 @@ import {
   dirOf,
   fetchTree,
   readmePaths,
-  treeUrl,
 } from "./github.js";
 
 const outlineEl = document.getElementById("outline");
@@ -52,10 +51,11 @@ function navigationType() {
 // -- rendering ---------------------------------------------------------------
 
 function render(paths) {
-  // The repo-root readme is the repo, not a unit, so it isn't listed.
+  // The repo-root readme is the repo, not a unit, so it isn't listed — and
+  // neither is docs/, which is this site's own source rather than course work.
   const units = paths
     .map((path) => ({ dir: dirOf(path), loc: { ...CLASS_REPO, path } }))
-    .filter(({ dir }) => dir);
+    .filter(({ dir }) => dir && !/^docs(\/|$)/.test(dir));
 
   if (!units.length) {
     setStatus("No unit readmes found in this repo.");
@@ -67,18 +67,7 @@ function render(paths) {
       "ul",
       { class: "decks" },
       units.map(({ dir, loc }) =>
-        el("li", {}, [
-          el("span", { class: "unit" }, dir),
-          el("span", { class: "links" }, [
-            el("a", { href: deckHref(loc) }, "slides"),
-            // The unit's folder on GitHub — everything that goes with the deck.
-            el(
-              "a",
-              { href: treeUrl({ ...CLASS_REPO, path: dir }) },
-              "materials",
-            ),
-          ]),
-        ])
+        el("li", {}, el("a", { class: "unit", href: deckHref(loc) }, dir))
       ),
     ),
   );

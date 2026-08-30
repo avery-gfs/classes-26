@@ -3,10 +3,11 @@
 # Run after bumping the reveal.js version in package.json:
 #   npm install && npm run vendor
 set -euo pipefail
-cd "$(dirname "$0")/.."
+# node_modules lives at the repo root; the vendored copy ships beside the app.
+cd "$(dirname "$0")/../../.."
 
 src=node_modules/reveal.js
-dst=vendor/reveal
+dst=docs/slides/vendor/reveal
 
 [ -d "$src" ] || { echo "run 'npm install' first" >&2; exit 1; }
 

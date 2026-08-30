@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 shopt -s globstar
 
-deno fmt .
+# docs/slides/vendor is a verbatim copy of reveal.js; formatting it would put
+# the whole minified library in every diff and undo what `npm run vendor` writes.
+deno fmt . --ignore=docs/slides/vendor/
 ruff format --no-respect-gitignore --preview --no-cache **/*.py

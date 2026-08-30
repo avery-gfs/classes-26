@@ -114,10 +114,13 @@ The class repo it reads is the `CLASS_REPO` constant at the top of
 
 ## Development
 
+The package manifest lives at the repo root, so run these from there rather than
+from this directory:
+
 ```sh
 npm run serve    # http://localhost:6700
 npm test         # checks parsing, link rewriting and the deck listing
-npm run fmt
+npm run fmt      # deno fmt + ruff, over the whole repo
 ```
 
 ES modules don't load over `file://`, so opening `index.html` directly won't
@@ -126,7 +129,7 @@ work; use the server. It's a dependency-free static server whose one opinion is
 headers at all, which lets the browser heuristically cache `app/*.js` and makes
 your edits look like they did nothing.
 
-To update reveal.js, bump it in `package.json`, then:
+To update reveal.js, bump it in the repo-root `package.json`, then:
 
 ```sh
 npm install && npm run vendor
