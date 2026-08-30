@@ -7,7 +7,9 @@
 - [CS 3: Algorithms, Data Structures, and Problem Solving](cs-3)
 - [CS Capstone: Advanced Software Engineering](cs-capstone)
 
-[Slides](https://avery-gfs.github.io/cs-curriculum/slides/)
+## Slides
+
+https://avery-gfs.github.io/cs-curriculum/slides/
 
 ## Why Learn to Write Software?
 
