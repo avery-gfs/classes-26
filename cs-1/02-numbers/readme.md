@@ -516,31 +516,6 @@ Your dog's age (years): 10
 Your dog's age (dog-years): 70
 ```
 
-## Problem: Distance Formula
-
-Write code that asks the user for the coordinates of two points and prints the
-distance between them.
-
-The distance between two points is:
-
-$$
-d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-$$
-
-Taking the square root of a number is the same as raising it to the power of
-`0.5`.
-
-```
-x1: 1
-y1: 2
-x2: 4
-y2: 6
-```
-
-```
-Distance: 5.0
-```
-
 ## Problem: Line Equation
 
 Write code that asks the user for the coordinates of two points and prints the
