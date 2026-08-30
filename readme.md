@@ -20,6 +20,6 @@ solve intuitively, while still struggling to describe our solutions formally.
 Computer science gives us tools to be precise about our approaches to problem
 solving, and thus expand our ability to tackle complexity.
 
-And it lets use make cool ASCII art.
+_And -- most importantly -- it lets use make cool ASCII art._
 
 ![](assets/ascii-dali.png)
