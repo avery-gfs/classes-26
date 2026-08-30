@@ -144,7 +144,6 @@
 
 - Unit conversion
 - Dog years
-- Distance formula
 - Line equation from two points
 
 | Symbol | Operation                |
@@ -156,15 +155,30 @@
 | `>`    | greater than             |
 | `>=`   | greater than or equal to |
 
-### Imports and the Math Library
+### Imports and Math
 
+- Global numeric functions
 - `import`
-- The `math` library
-- Constants and functions from a module
+- The `math` library important contents (table)
 
 **Problems**
 
-- Geometry calculator — area, volume, perimeter, surface area
+- Distance formula
+- Sphere calculator — volume, surface area
+
+## Global Numeric Functions
+
+Python provides functions for common numeric tasks.
+
+| Function   | Operation                                                                                                                   |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `round(x)` | Round to the nearest whole number (using [banker's rounding](https://en.wikipedia.org/wiki/Rounding#Rounding_half_to_even)) |
+| `abs(x)`   | Absolute value (convert negatives to positives)                                                                             |
+
+```py
+round(3.7)  # 4
+abs(-8)     # 8
+```
 
 ### Booleans and Conditionals
 

@@ -436,20 +436,6 @@ print(count)
 40
 ```
 
-## Numeric Functions
-
-Python provides functions for common numeric tasks.
-
-| Function   | Operation                                                                                                                   |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `round(x)` | Round to the nearest whole number (using [banker's rounding](https://en.wikipedia.org/wiki/Rounding#Rounding_half_to_even)) |
-| `abs(x)`   | Absolute value (convert negatives to positives)                                                                             |
-
-```py
-round(3.7)  # 4
-abs(-8)     # 8
-```
-
 ## Numeric Input
 
 What's the issue with this code?
