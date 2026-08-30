@@ -122,9 +122,8 @@ one is bigger.
 
 ## Imports
 
-Python has more useful mathematical functions in the `math` **module**.
-
-We have to **import** modules to use them using the `import` statement.
+Python has more useful mathematical functions in the `math` **module**. We have
+to **import** modules to use them using the `import` statement.
 
 ```py
 import math
@@ -148,19 +147,13 @@ print(math.pi)        # 3.141592653589793
 
 Useful definitions in the `math` module.
 
-| Name                                        | Meaning                                                 |
-| ------------------------------------------- | ------------------------------------------------------- |
-| `math.pi`                                   | The constant $\pi$ (`3.14159...`)                       |
-| `math.e`                                    | The constant $e$ (`2.71828...`)                         |
-| `math.sqrt(x)`                              | Square root of `x`                                      |
-| `math.floor(x)`                             | Round down to the nearest whole number                  |
-| `math.ceil(x)`                              | Round up to the nearest whole number                    |
-| `math.log(x, base)`                         | Logarithm of `x` (base `e` if no base is given)         |
-| `math.sin(x)`, `math.cos(x)`, `math.tan(x)` | Sine, cosine, and tangent of `x`, in radians            |
-| `math.radians(x)`                           | Convert `x` degrees to radians                          |
-| `math.degrees(x)`                           | Convert `x` radians to degrees                          |
-| `math.hypot(x, y)`                          | Length of the hypotenuse, $\sqrt{x^2 + y^2}$            |
-| `math.factorial(n)`                         | `n!`, the product of every whole number from `1` to `n` |
+| Name               | Meaning                                      |
+| ------------------ | -------------------------------------------- |
+| `math.pi`          | The constant $\pi$ (`3.14159...`)            |
+| `math.sqrt(x)`     | Square root of `x`                           |
+| `math.floor(x)`    | Round down to the nearest whole number       |
+| `math.ceil(x)`     | Round up to the nearest whole number         |
+| `math.hypot(x, y)` | Length of the hypotenuse, $\sqrt{x^2 + y^2}$ |
 
 The full list is in the
 [Python documentation](https://docs.python.org/3/library/math.html).
