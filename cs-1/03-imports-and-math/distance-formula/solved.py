@@ -30,6 +30,6 @@ y2 = float(input("y2: "))
 
 dx = x2 - x1
 dy = y2 - y1
-distance = math.sqrt(dx**2 + dy**2)
+distance = math.sqrt(dx**2 + dy**2)  # Could also use math.hypot(dx, dy)
 
 print(f"Distance: {round(distance, 2)}")
