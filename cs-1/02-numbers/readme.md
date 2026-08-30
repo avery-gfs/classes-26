@@ -13,6 +13,26 @@ temperature = 98.6  # A float (a number with a decimal point)
 - **Ints**: whole numbers.
 - **Floats**: numbers with decimal points.
 
+## Math Operators
+
+| Symbol | Operation      |
+| ------ | -------------- |
+| +      | addition       |
+| -      | subtraction    |
+| *      | multiplication |
+| /      | division       |
+| //     | floor division |
+| **     | exponentiation |
+| %      | modulo         |
+
+These operators work on ints, floats, or a combination of both.
+
+```py
+1 + 2      # 3
+1.2 + 5.5  # 6.7
+-4 + 0.01  # -3.99
+```
+
 ## Addition
 
 What value does this expression produce?
@@ -79,11 +99,11 @@ What value does this expression produce?
 
 ...
 
+Division produces a float!
+
 ```
 1.0
 ```
-
-Division produces a float!
 
 ## Floor Division
 
@@ -95,11 +115,11 @@ What value does this expression produce?
 
 ...
 
+Floor division rounds down to the nearest integer.
+
 ```
 1
 ```
-
-Floor division rounds down to the nearest integer.
 
 ---
 
@@ -125,11 +145,11 @@ What value does this expression produce?
 
 ...
 
+Remember that float division rounds _down_, not _towards zero_.
+
 ```
 -4
 ```
-
-Remember that float division rounds _down_, not _towards zero_.
 
 ## Exponentiation
 
@@ -231,3 +251,5 @@ What value does this expression produce?
 ```
 14
 ```
+
+## Ints and Floats
