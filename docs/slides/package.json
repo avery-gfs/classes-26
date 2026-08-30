@@ -1,0 +1,19 @@
+{
+  "name": "slides",
+  "type": "module",
+  "private": true,
+  "description": "Static viewer that renders course readmes from GitHub as reveal.js slides.",
+  "scripts": {
+    "serve": "node scripts/serve.js",
+    "vendor": "./scripts/vendor-reveal.sh",
+    "test": "node scripts/test-github.js",
+    "fmt": "prettier --write . --prose-wrap=always"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "reveal.js": "^5.2.1"
+  },
+  "prettier": {
+    "printWidth": 90
+  }
+}
