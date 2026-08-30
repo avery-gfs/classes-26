@@ -33,6 +33,8 @@ These operators work on ints, floats, or a combination of both.
 -4 + 0.01  # -3.99
 ```
 
+## Operator Precedence
+
 These operators follow standard math order of operations, with parentheses used
 for grouping.
 
