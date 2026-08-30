@@ -395,15 +395,15 @@ score += 5
 
 Each math operator has a matching compound assignment operator.
 
-| Symbol | Meaning      |
-| ------ | ------------ |
-| `+=`   | `x = x + y`  |
-| `-=`   | `x = x - y`  |
-| `*=`   | `x = x * y`  |
-| `/=`   | `x = x / y`  |
-| `//=`  | `x = x // y` |
-| `**=`  | `x = x ** y` |
-| `%=`   | `x = x % y`  |
+| Symbol | Example   | Meaning      |
+| ------ | --------- | ------------ |
+| `+=`   | `x += y`  | `x = x + y`  |
+| `-=`   | `x -= y`  | `x = x - y`  |
+| `*=`   | `x *= y`  | `x = x * y`  |
+| `/=`   | `x /= y`  | `x = x / y`  |
+| `//=`  | `x //= y` | `x = x // y` |
+| `**=`  | `x **= y` | `x = x ** y` |
+| `%=`   | `x %= y`  | `x = x % y`  |
 
 ---
 
