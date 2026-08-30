@@ -80,13 +80,27 @@ round(3.5)
 What value does this expression produce?
 
 ```py
-round(3.14159, 2)
+round(1234.5678, 2)
 ```
 
 ...
 
 ```
-3.14
+1234.56
+```
+
+---
+
+What value does this expression produce?
+
+```py
+round(1234.5678, -2)
+```
+
+...
+
+```
+1200.0
 ```
 
 ## Absolute Value
@@ -113,7 +127,7 @@ abs(3 - 10)
 
 ...
 
-`abs` is useful for finding the distance between two numbers, no matter which
+`abs` is useful for finding the difference between two numbers, no matter which
 one is bigger.
 
 ```
