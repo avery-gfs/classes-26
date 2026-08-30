@@ -125,7 +125,7 @@ What value does this expression produce?
 
 ...
 
-Floor division rounds down to the nearest integer.
+Floor division rounds down to the nearest whole number.
 
 ```
 1
@@ -155,7 +155,7 @@ What value does this expression produce?
 
 ...
 
-Remember that float division rounds _down_, not _towards zero_.
+Floor division rounds _down_, not _towards zero_.
 
 ```
 -4
@@ -232,6 +232,20 @@ What value does this expression produce?
 
 ```
 4
+```
+
+---
+
+What value does this expression produce?
+
+```py
+-14 % 5
+```
+
+...
+
+```
+1
 ```
 
 ---
@@ -385,7 +399,7 @@ Changing `x` after we've defined `y` doesn't change the value of `y`.
 
 ## Compound Assignment
 
-Python provides a shorthand for updating a variable based on it's current value.
+Python provides a shorthand for updating a variable based on its current value.
 The two lines below are equivalent.
 
 ```py
@@ -452,7 +466,7 @@ Issue: `input` always gives us a string, even when the user types digits.
 ```
 x: 10
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in <module>
 TypeError: unsupported operand type(s) for /: 'str' and 'int'
 ```
 
@@ -475,4 +489,96 @@ print(x / 2)
 ```
 x: 10
 5.0
+```
+
+## Problem: Temperature Conversion
+
+Write code that asks the user for a temperature in degrees Celsius and prints
+the temperature in degrees Fahrenheit.
+
+To convert Celsius to Fahrenheit, multiply by `9`, divide by `5`, and add `32`.
+
+```
+Enter degrees C: 25
+```
+
+```
+Temp in degrees F: 77.0
+```
+
+## Problem: Dog Years
+
+Write a program that gets two numbers as input from the user:
+
+- Their birth year
+- Their dog's birth year
+
+And calculates:
+
+- The user's age in years
+- The dog's age in years
+- The dog's age in dog-years
+
+```
+Enter your birth year: 1996
+Enter your dog's birth year: 2016
+```
+
+```
+Your age (years): 30
+Your dog's age (years): 10
+Your dog's age (dog-years): 70
+```
+
+## Problem: Distance Formula
+
+Write code that asks the user for the coordinates of two points and prints the
+distance between them.
+
+The distance between two points is:
+
+$$
+d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+$$
+
+Taking the square root of a number is the same as raising it to the power of
+`0.5`.
+
+```
+x1: 1
+y1: 2
+x2: 4
+y2: 6
+```
+
+```
+Distance: 5.0
+```
+
+## Problem: Line Equation
+
+Write code that asks the user for the coordinates of two points and prints the
+equation of the line that passes through them.
+
+The slope $m$ and y-intercept $b$ of the line are:
+
+$$
+m = \frac{y_2 - y_1}{x_2 - x_1}
+$$
+
+$$
+b = y_1 - m x_1
+$$
+
+The equation of the line is $y = mx + b$.
+
+```
+x1: 1
+y1: 3
+x2: 3
+y2: 7
+```
+
+```
+y = 2.0x + 1.0
 ```
