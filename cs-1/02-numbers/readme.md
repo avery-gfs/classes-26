@@ -445,15 +445,12 @@ x = input("x: ")
 print(x / 2)
 ```
 
-```
-x: 10
-```
-
 ...
 
 Issue: `input` always gives us a string, even when the user types digits.
 
 ```
+x: 10
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: unsupported operand type(s) for /: 'str' and 'int'
@@ -477,8 +474,5 @@ print(x / 2)
 
 ```
 x: 10
-```
-
-```
 5.0
 ```
