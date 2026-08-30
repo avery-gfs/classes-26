@@ -131,11 +131,12 @@
 - Numbers
 - Integers vs. floats
 - Basic numerical operators (`+ - * / // ** %`)
-- Inequality operators
-- Numerical functions (`round`, `abs`, `floor`, `ceil`)
-- Banker's rounding
-- Reading and converting numerical input
 - Type errors
+- Vars based on vars
+- Compound operations
+- Numerical functions (`round`, `abs`, `floor`, `ceil`) note Banker's rounding
+- Reading and converting numerical input -- show type error without conversion
+  first
 - Validating user input
 - Default inputs
 
@@ -148,11 +149,21 @@
 - Distance formula
 - Line equation from two points
 
+| Symbol | Operation                |
+| ------ | ------------------------ |
+| `==`   | equal                    |
+| `!=`   | not equal                |
+| `<`    | less than                |
+| `<=`   | less than or equal to    |
+| `>`    | greater than             |
+| `>=`   | greater than or equal to |
+
 ### Booleans and Conditionals
 
 - Booleans
 - Boolean operators (`and`, `or`, `not`)
 - Equality
+- Inequality operators
 - Float equality
 - Conditionals
 - Conditional expressions

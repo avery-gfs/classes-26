@@ -17,13 +17,13 @@ temperature = 98.6  # A float (a number with a decimal point)
 
 | Symbol | Operation      |
 | ------ | -------------- |
-| `+`    | addition       |
-| `-`    | subtraction    |
-| `*`    | multiplication |
-| `/`    | division       |
-| `//`   | floor division |
-| `**`   | exponentiation |
-| `%`    | modulo         |
+| `+`    | Addition       |
+| `-`    | Subtraction    |
+| `*`    | Multiplication |
+| `/`    | Division       |
+| `//`   | Floor division |
+| `**`   | Exponentiation |
+| `%`    | Modulo         |
 
 These operators work on ints, floats, or a combination of both.
 
@@ -262,4 +262,217 @@ What value does this expression produce?
 14
 ```
 
-## Ints and Floats
+## Type Errors
+
+What's the issue?
+
+```py
+3 / "4"
+```
+
+...
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for /: 'int' and 'str'
+```
+
+The division operator expects two numbers, not a number and a string. We're
+trying to do division on the wrong **type** of value, and getting a **type
+error**.
+
+- **Type**: the kind of value something is (int, float, string, etc).
+
+- **Type Error**: an error caused by using a value of the wrong type.
+
+## Numeric Variables
+
+We can store numbers in variables, and use these variables with math operators.
+
+```py
+x = 5
+```
+
+What value does this expression produce?
+
+```py
+x * 4
+```
+
+...
+
+```
+20
+```
+
+---
+
+```py
+x = 5
+y = 6
+```
+
+What value does this expression produce?
+
+```py
+x * y
+```
+
+...
+
+```
+30
+```
+
+## Variables From Variables
+
+We can use existing variables to define new variables.
+
+What will this code print out?
+
+```py
+score = 58
+bonus = 3
+print(score + bonus)
+```
+
+...
+
+```
+61
+```
+
+---
+
+A variable can even be defined using its own old value. Python computes the
+right hand side first, then stores the result back in the variable.
+
+What will this code print out?
+
+```py
+score = 92
+score = score + 5
+print(score)
+```
+
+...
+
+```
+97
+```
+
+---
+
+What will this code print out?
+
+```py
+x = 2
+y = x * 3
+x = 10
+print(y)
+```
+
+...
+
+```
+6
+```
+
+## Compound Assignment
+
+Python provides a shorthand for updating a variable based on it's current value.
+The two lines below are equivalent.
+
+```py
+score = score + 5
+score += 5
+```
+
+Each math operator has a matching compound assignment operator.
+
+| Symbol | Meaning      |
+| ------ | ------------ |
+| `+=`   | `x = x + y`  |
+| `-=`   | `x = x - y`  |
+| `*=`   | `x = x * y`  |
+| `/=`   | `x = x / y`  |
+| `//=`  | `x = x // y` |
+| `**=`  | `x = x ** y` |
+| `%=`   | `x = x % y`  |
+
+What will this code print out?
+
+```py
+count = 3
+count += 1
+count *= 10
+print(count)
+```
+
+...
+
+```
+40
+```
+
+## Numeric Functions
+
+Python provides functions for common numeric tasks.
+
+| Function   | Operation                                                                                                                   |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `round(x)` | Round to the nearest whole number (using [banker's rounding](https://en.wikipedia.org/wiki/Rounding#Rounding_half_to_even)) |
+| `abs(x)`   | Absolute value (convert negatives to positives)                                                                             |
+
+```py
+round(3.7)  # 4
+abs(-8)     # 8
+```
+
+## Numeric Input
+
+What's the issue with this code?
+
+```py
+x = input("x: ")
+print(x / 2)
+```
+
+```
+x: 10
+```
+
+...
+
+Issue: `input` always gives us a string, even when the user types digits.
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+```
+
+## Converting Input
+
+The `int` and `float` functions convert a string into a number.
+
+```py
+int("12")     # 12
+float("1.5")  # 1.5
+```
+
+So we wrap our call to `input` in a call to `int`.
+
+```py
+x = input("x: ")
+print(x / 2)
+```
+
+```
+x: 10
+```
+
+```
+5.0
+```
