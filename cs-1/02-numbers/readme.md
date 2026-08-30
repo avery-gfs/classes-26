@@ -456,7 +456,7 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for /: 'str' and 'int'
 ```
 
-## Converting Input
+---
 
 The `int` and `float` functions convert a string into a number.
 
@@ -465,10 +465,10 @@ int("12")     # 12
 float("1.5")  # 1.5
 ```
 
-So we wrap our call to `input` in a call to `int`.
+We can fix our code by wrapping our call to `input` in a call to `int`.
 
 ```py
-x = input("x: ")
+x = int(input("x: "))
 print(x / 2)
 ```
 
