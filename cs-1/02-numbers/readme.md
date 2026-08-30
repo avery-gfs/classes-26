@@ -369,6 +369,7 @@ What will this code print out?
 ```py
 x = 2
 y = x * 3
+print(y)
 x = 10
 print(y)
 ```
@@ -377,7 +378,10 @@ print(y)
 
 ```
 6
+6
 ```
+
+Changing `x` after we've defined `y` doesn't change the value of `y`.
 
 ## Compound Assignment
 
@@ -400,6 +404,8 @@ Each math operator has a matching compound assignment operator.
 | `//=`  | `x = x // y` |
 | `**=`  | `x = x ** y` |
 | `%=`   | `x = x % y`  |
+
+---
 
 What will this code print out?
 
