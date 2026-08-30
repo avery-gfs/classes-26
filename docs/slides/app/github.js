@@ -28,7 +28,9 @@ export function rawUrl({ owner, repo, ref, path }) {
 
 export function blobUrl({ owner, repo, ref, path }) {
   const kind = path ? "blob" : "tree";
-  return `https://github.com/${owner}/${repo}/${kind}/${ref}/${encodePath(path)}`;
+  return `https://github.com/${owner}/${repo}/${kind}/${ref}/${
+    encodePath(path)
+  }`;
 }
 
 export function treeUrl({ owner, repo, ref, path }) {
@@ -67,11 +69,15 @@ export function parseSource(input) {
   if (!src) throw new Error("No source given.");
 
   if (/^https?:\/\//i.test(src)) return parseGitHubUrl(src);
-  if (/^(www\.)?github\.com\//i.test(src)) return parseGitHubUrl("https://" + src);
-  if (/^raw\.githubusercontent\.com\//i.test(src))
+  if (/^(www\.)?github\.com\//i.test(src)) {
     return parseGitHubUrl("https://" + src);
-  if (/^[a-z][a-z0-9+.-]*:/i.test(src))
+  }
+  if (/^raw\.githubusercontent\.com\//i.test(src)) {
+    return parseGitHubUrl("https://" + src);
+  }
+  if (/^[a-z][a-z0-9+.-]*:/i.test(src)) {
     throw new Error("Only github.com links are supported.");
+  }
 
   // Anything else is read as a path inside the class repo.
   return { ...CLASS_REPO, path: normalizePath(src) };
@@ -98,10 +104,11 @@ function parseGitHubUrl(str) {
     const [owner, repo, kind, ...rest] = seg;
     if (!owner || !repo) throw new Error(`Not a repository link: ${str}`);
     if (!kind) return { owner, repo, ref: "HEAD", path: "" };
-    if (!["blob", "tree", "raw", "blame"].includes(kind))
+    if (!["blob", "tree", "raw", "blame"].includes(kind)) {
       throw new Error(
         `Link a file or folder in a repo (a /blob/ or /tree/ URL), not /${kind}/.`,
       );
+    }
     return { owner, repo, ...splitRef(rest) };
   }
 
@@ -114,11 +121,14 @@ function parseGitHubUrl(str) {
 // they only work in the `refs/heads/` form.
 function splitRef(rest) {
   if (!rest.length) return { ref: "HEAD", path: "" };
-  if (rest[0] === "refs" && ["heads", "tags"].includes(rest[1]) && rest.length > 2)
+  if (
+    rest[0] === "refs" && ["heads", "tags"].includes(rest[1]) && rest.length > 2
+  ) {
     return {
       ref: rest.slice(0, 3).join("/"),
       path: normalizePath(rest.slice(3).join("/")),
     };
+  }
   return { ref: rest[0], path: normalizePath(rest.slice(1).join("/")) };
 }
 
@@ -194,12 +204,13 @@ export async function fetchMarkdown(loc) {
   }
 
   const where = `${loc.owner}/${loc.repo}@${loc.ref}/${loc.path}`;
-  if (status === 404)
+  if (status === 404) {
     throw new Error(
       isMarkdownPath(loc.path)
         ? `No such file: ${where}`
         : `No readme.md found in ${where}`,
     );
+  }
   throw new Error(`GitHub returned ${status} for ${where}`);
 }
 
@@ -216,7 +227,9 @@ export function prepareMarkdown(text, loc) {
 // Runs `fn` over the parts of the markdown that aren't fenced blocks or inline
 // code spans, so code samples are never touched.
 function outsideCode(md, fn) {
-  const fences = md.split(/(^ {0,3}(?:```|~~~)[\s\S]*?^ {0,3}(?:```|~~~)[^\n]*$)/gm);
+  const fences = md.split(
+    /(^ {0,3}(?:```|~~~)[\s\S]*?^ {0,3}(?:```|~~~)[^\n]*$)/gm,
+  );
   return fences
     .map((part, i) => {
       if (i % 2) return part;
@@ -235,7 +248,9 @@ function rewriteLinks(text, loc) {
       .replace(
         /(!?)\[([^\]]*)\]\(\s*<?([^)<>\s]*)>?(\s+["'][^)]*)?\)/g,
         (m, bang, label, url, title) =>
-          `${bang}[${label}](${retarget(url, loc, bang ? "image" : "link")}${title || ""})`,
+          `${bang}[${label}](${retarget(url, loc, bang ? "image" : "link")}${
+            title || ""
+          })`,
       )
       // [id]: url "title"
       .replace(
@@ -245,12 +260,14 @@ function rewriteLinks(text, loc) {
       // <img src="..."> / <source src="...">
       .replace(
         /(<(?:img|source|video|audio)\b[^>]*?\bsrc\s*=\s*)("[^"]*"|'[^']*')/gi,
-        (m, head, quoted) => head + requote(quoted, (u) => retarget(u, loc, "image")),
+        (m, head, quoted) =>
+          head + requote(quoted, (u) => retarget(u, loc, "image")),
       )
       // <a href="...">
       .replace(
         /(<a\b[^>]*?\bhref\s*=\s*)("[^"]*"|'[^']*')/gi,
-        (m, head, quoted) => head + requote(quoted, (u) => retarget(u, loc, "link")),
+        (m, head, quoted) =>
+          head + requote(quoted, (u) => retarget(u, loc, "link")),
       )
   );
 }
@@ -275,8 +292,9 @@ function retarget(url, loc, kind) {
   if (kind === "image") return rawUrl(at) + frag;
   // A markdown file, or a path with no extension (i.e. a folder with a readme),
   // is something this viewer can render itself.
-  if (isMarkdownPath(at.path) || !/\.[a-z0-9]+$/i.test(at.path))
+  if (isMarkdownPath(at.path) || !/\.[a-z0-9]+$/i.test(at.path)) {
     return deckHref(at) + frag;
+  }
   return blobUrl(at) + frag;
 }
 
@@ -296,10 +314,11 @@ export async function fetchTree(repo = CLASS_REPO, { force = false } = {}) {
   }
 
   try {
-    const url =
-      `${API_HOST}/repos/${repo.owner}/${repo.repo}` +
+    const url = `${API_HOST}/repos/${repo.owner}/${repo.repo}` +
       `/git/trees/${encodeURIComponent(repo.ref)}?recursive=1`;
-    const res = await fetch(url, { headers: { Accept: "application/vnd.github+json" } });
+    const res = await fetch(url, {
+      headers: { Accept: "application/vnd.github+json" },
+    });
     if (!res.ok) throw await apiError(res);
 
     const data = await res.json();
@@ -340,10 +359,11 @@ async function apiError(res) {
       );
     }
   }
-  if (res.status === 404)
+  if (res.status === 404) {
     return new Error(
       `No branch "${CLASS_REPO.ref}" in ${CLASS_REPO.owner}/${CLASS_REPO.repo}.`,
     );
+  }
   return new Error(`GitHub returned ${res.status} listing the repository.`);
 }
 
@@ -406,7 +426,9 @@ export function splitSlides(markdown) {
     const token = /^ {0,3}(`{3,}|~{3,})/.exec(line)?.[1];
 
     if (fence) {
-      if (token && token[0] === fence[0] && token.length >= fence.length) fence = "";
+      if (token && token[0] === fence[0] && token.length >= fence.length) {
+        fence = "";
+      }
     } else if (token) {
       fence = token;
     } else if (/^##/.test(line)) {
@@ -434,12 +456,16 @@ export function splitSlides(markdown) {
 export function splitTitle(markdown) {
   const heading = /^ {0,3}#\s+(.+?)\s*#*\s*$/m.exec(markdown);
   const firstSlide = markdown.search(/^ {0,3}##\s/m);
-  if (!heading || (firstSlide !== -1 && heading.index > firstSlide))
+  if (!heading || (firstSlide !== -1 && heading.index > firstSlide)) {
     return { title: "", body: markdown };
+  }
 
   const title = heading[1].trim();
   const before = markdown.slice(0, heading.index).replace(/\n+$/, "");
-  const after = markdown.slice(heading.index + heading[0].length).replace(/^\n+/, "");
+  const after = markdown.slice(heading.index + heading[0].length).replace(
+    /^\n+/,
+    "",
+  );
   let body = before ? `${before}\n\n${after}` : after;
 
   // Nothing but the title before the first `##` means there is no first slide.

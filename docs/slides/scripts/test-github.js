@@ -59,7 +59,9 @@ test("a bare repo url uses HEAD", () => {
 
 test("raw urls, including the refs/heads form", () => {
   assert.deepEqual(
-    parseSource("https://raw.githubusercontent.com/o/r/refs/heads/my/branch/a/readme.md"),
+    parseSource(
+      "https://raw.githubusercontent.com/o/r/refs/heads/my/branch/a/readme.md",
+    ),
     { owner: "o", repo: "r", ref: "refs/heads/my", path: "branch/a/readme.md" },
   );
   assert.deepEqual(
@@ -111,7 +113,10 @@ test("absolute urls and anchors are untouched", () => {
 
 test("links to markdown and folders open in the viewer", () => {
   const root = { ...CLASS, path: "readme.md" };
-  assert.equal(prepareMarkdown("[CS 1](cs-1)", root), "[CS 1](view.html?src=cs-1)");
+  assert.equal(
+    prepareMarkdown("[CS 1](cs-1)", root),
+    "[CS 1](view.html?src=cs-1)",
+  );
   assert.equal(
     prepareMarkdown("[next](../01-variables/readme.md)", at),
     "[next](view.html?src=cs-1%2F01-variables%2Freadme.md)",
@@ -138,7 +143,9 @@ test("outside the class repo, links stay in that repo", () => {
 });
 
 test("code is never rewritten", () => {
-  const fenced = ["```py", 'print("![](a.png)")', "```", "", "![](a.png)"].join("\n");
+  const fenced = ["```py", 'print("![](a.png)")', "```", "", "![](a.png)"].join(
+    "\n",
+  );
   const out = prepareMarkdown(fenced, at);
   assert.match(out, /print\("!\[\]\(a\.png\)"\)/);
   assert.match(out, /!\[\]\(https:\/\/raw\./);
@@ -163,12 +170,15 @@ test("every `##` starts a slide", () => {
 });
 
 test("`---` starts a slide that repeats the heading", () => {
-  assert.deepEqual(splitSlides("## One\n\na\n\n---\n\nb\n\n---\n\nc\n\n## Two\n\nd"), [
-    "## One\n\na",
-    "## One\n\nb",
-    "## One\n\nc",
-    "## Two\n\nd",
-  ]);
+  assert.deepEqual(
+    splitSlides("## One\n\na\n\n---\n\nb\n\n---\n\nc\n\n## Two\n\nd"),
+    [
+      "## One\n\na",
+      "## One\n\nb",
+      "## One\n\nc",
+      "## Two\n\nd",
+    ],
+  );
 });
 
 test("`---` before any heading just splits", () => {

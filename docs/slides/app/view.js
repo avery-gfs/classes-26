@@ -56,8 +56,9 @@ async function show(src) {
   document.title = title || loc.path || "Slides";
 
   const slides = splitSlides(body);
-  for (const slide of slides.length ? slides : [body])
+  for (const slide of slides.length ? slides : [body]) {
     slidesEl.append(deckSection(slide));
+  }
 
   await Reveal.initialize({
     hash: true,
@@ -107,8 +108,7 @@ function markPlainCodeBlocks(hljs) {
     // class, or any class that happens to name a language it knows (a bare
     // ```py fence becomes class="py").
     const classes = `${code.className} ${code.parentNode.className}`;
-    const declared =
-      /\blang(?:uage)?-[\w-]+\b/i.test(classes) ||
+    const declared = /\blang(?:uage)?-[\w-]+\b/i.test(classes) ||
       classes.split(/\s+/).some((name) => name && hljs.getLanguage(name));
 
     if (!declared) code.classList.add("language-plaintext");
@@ -199,8 +199,9 @@ function keepBrowserHistoryKeys() {
   document.addEventListener(
     "keydown",
     (event) => {
-      if (event.altKey && ["ArrowLeft", "ArrowRight"].includes(event.key))
+      if (event.altKey && ["ArrowLeft", "ArrowRight"].includes(event.key)) {
         event.stopImmediatePropagation();
+      }
     },
     true,
   );

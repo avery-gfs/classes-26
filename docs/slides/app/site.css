@@ -21,11 +21,7 @@ body {
   padding: 2rem 1.25rem 3rem;
   background: var(--bg);
   color: var(--fg);
-  font:
-    18px/1.6 ui-monospace,
-    SFMono-Regular,
-    Menlo,
-    monospace;
+  font: 18px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 a {

@@ -34,7 +34,9 @@ async function load({ force = false } = {}) {
   // Only a stale list is worth saying anything about: it is out of date and
   // there is a reason why.
   freshnessEl.textContent = tree.stale
-    ? `Showing a cached list — ${tree.error?.message ?? "GitHub is unreachable."}`
+    ? `Showing a cached list — ${
+      tree.error?.message ?? "GitHub is unreachable."
+    }`
     : "";
   freshnessEl.classList.toggle("warn", !!tree.stale);
 }
@@ -70,9 +72,13 @@ function render(paths) {
           el("span", { class: "links" }, [
             el("a", { href: deckHref(loc) }, "slides"),
             // The unit's folder on GitHub — everything that goes with the deck.
-            el("a", { href: treeUrl({ ...CLASS_REPO, path: dir }) }, "materials"),
+            el(
+              "a",
+              { href: treeUrl({ ...CLASS_REPO, path: dir }) },
+              "materials",
+            ),
           ]),
-        ]),
+        ])
       ),
     ),
   );
@@ -84,7 +90,11 @@ function setStatus(text, kind = "") {
 
 function el(tag, attrs = {}, children = []) {
   const node = document.createElement(tag);
-  for (const [k, v] of Object.entries(attrs)) if (v != null) node.setAttribute(k, v);
-  for (const child of [].concat(children)) if (child != null) node.append(child);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v != null) node.setAttribute(k, v);
+  }
+  for (const child of [].concat(children)) {
+    if (child != null) node.append(child);
+  }
   return node;
 }

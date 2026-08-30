@@ -10,9 +10,9 @@ Published at <https://avery-gfs.github.io/slides/>.
 
 ## Using it
 
-- **`index.html`** — _Avery's CS Curriculum_ — lists every
-  `readme.md` in the class repo by folder path, each with a link to the rendered
-  slides and one to the unit's folder on GitHub.
+- **`index.html`** — _Avery's CS Curriculum_ — lists every `readme.md` in the
+  class repo by folder path, each with a link to the rendered slides and one to
+  the unit's folder on GitHub.
 - **`view.html?src=…`** renders one document. `src` is either a path inside the
   class repo (`cs-1/00-introduction`) or a link to any file or folder on GitHub:
 
@@ -36,10 +36,10 @@ Slides split at every `##` heading. Within one, `---` and `...` on a line of
 their own are both a step you advance to, and neither is ever drawn.
 
 `---` **starts a fresh slide** carrying the same `##` heading, so what was on
-screen is replaced. Use it to step through versions of one thing — an equation, a
-diagram, a snippet — each landing where the last one was. `...` instead **adds**
-the block after it below what's already shown, as a reveal fragment; earlier
-blocks stay until the next `---`.
+screen is replaced. Use it to step through versions of one thing — an equation,
+a diagram, a snippet — each landing where the last one was. `...` instead
+**adds** the block after it below what's already shown, as a reveal fragment;
+earlier blocks stay until the next `---`.
 
 ```
 ## Evaluating
@@ -69,15 +69,15 @@ markers are ignored inside fenced code blocks.
 
 The document's `# heading` doesn't get a title slide of its own — it becomes a
 small running header at the top of every slide, and stays put while a slide
-scrolls. Anything else above or below it is kept as the first slide. A slide
-too tall for the screen scrolls instead of running off the bottom.
+scrolls. Anything else above or below it is kept as the first slide. A slide too
+tall for the screen scrolls instead of running off the bottom.
 
-Slide changes are instant: no slide transition, no background cross-fade, and
-no fragment fade. Reveal's own keys still work — space to advance, `o` for the slide overview, `s`
-for speaker notes, `f` for fullscreen, `?` for the rest. `alt`+`←` and `alt`+`→`
-are deliberately left to the browser, so they still move through history rather
-than through the deck. Appending `&print-pdf` to a deck URL gives the printable
-layout.
+Slide changes are instant: no slide transition, no background cross-fade, and no
+fragment fade. Reveal's own keys still work — space to advance, `o` for the
+slide overview, `s` for speaker notes, `f` for fullscreen, `?` for the rest.
+`alt`+`←` and `alt`+`→` are deliberately left to the browser, so they still move
+through history rather than through the deck. Appending `&print-pdf` to a deck
+URL gives the printable layout.
 
 Edits to a readme show up on the next load. Two caches sit in the way, and both
 have to be dealt with:

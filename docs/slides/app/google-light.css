@@ -58,8 +58,7 @@ code.hljs {
 /* purposely do not highlight these things */
 .hljs-formula,
 .hljs-params,
-.hljs-property {
-}
+.hljs-property {}
 
 /* base03 - #b4b7b4 -  Comments, Invisibles, Line Highlighting */
 .hljs-comment {
@@ -142,9 +141,7 @@ code.hljs {
 
 /* base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed */
 .hljs-type,
-/* .hljs-selector-id, */
-/* .hljs-selector-class, */
-/* .hljs-selector-attr, */
+/* .hljs-selector-id, */ /* .hljs-selector-class, */ /* .hljs-selector-attr, */
 /* .hljs-selector-pseudo, */
 .hljs-template-tag,
 .diff .hljs-meta,

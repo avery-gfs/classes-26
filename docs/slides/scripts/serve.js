@@ -30,7 +30,9 @@ const TYPES = {
 };
 
 createServer(async (req, res) => {
-  const path = decodeURIComponent(new URL(req.url, "http://localhost").pathname);
+  const path = decodeURIComponent(
+    new URL(req.url, "http://localhost").pathname,
+  );
 
   // normalize() collapses `..`, so the join can't escape the project.
   const file = join(root, normalize(path).replace(/^(\.\.[/\\])+/, ""));
@@ -41,13 +43,17 @@ createServer(async (req, res) => {
     if (!info.isFile()) throw new Error("not a file");
 
     res.writeHead(200, {
-      "Content-Type": TYPES[extname(target).toLowerCase()] ?? "application/octet-stream",
+      "Content-Type": TYPES[extname(target).toLowerCase()] ??
+        "application/octet-stream",
       "Content-Length": info.size,
       "Cache-Control": "no-store",
     });
     createReadStream(target).pipe(res);
   } catch {
-    res.writeHead(404, { "Content-Type": "text/plain", "Cache-Control": "no-store" });
+    res.writeHead(404, {
+      "Content-Type": "text/plain",
+      "Cache-Control": "no-store",
+    });
     res.end(`Not found: ${path}\n`);
   }
 }).listen(port, () => console.log(`http://localhost:${port}`));
