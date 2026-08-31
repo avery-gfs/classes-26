@@ -46,7 +46,28 @@ numbers = [1, 4, 2, 7, 3, 1]
 for n in numbers:
     row = ""
 
-    for i in range(n):
+    for j in range(n):
+        row += "X"
+   
+    print(row)
+```
+
+```
+X
+XXXX
+XX
+XXXXXXX
+XXX
+X
+```
+
+```py
+numbers = [1, 4, 2, 7, 3, 1]
+
+for i in range(len(numbers)):
+    row = ""
+
+    for j in range(numbers[i]):
         row += "X"
    
     print(row)
@@ -67,7 +88,7 @@ X
 numbers = [1, 4, 2, 7, 3, 1]
 
 for n in numbers:
-    for i in range(n):
+    for j in range(n):
         print("X", end="")
    
     print()
