@@ -5,7 +5,7 @@
 - [CS 1: Introduction to Programming](cs-1)
 - [CS 2: Data Processing and Practical Applications](cs-2)
 - [CS 3: Algorithms, Data Structures, and Problem Solving](cs-3)
-- [CS Capstone: Advanced Software Engineering](cs-capstone)
+- [CS Capstone: Software Engineering Lab](cs-capstone)
 
 ## Slides
 

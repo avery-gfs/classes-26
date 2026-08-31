@@ -101,7 +101,7 @@ When we write code, we inevitably make mistakes that cause **errors**.
 - **Crash**: when a computer encounters an error while running a program, the
   computer will typically crash (stop running) the program.
 
-## Issue Practice
+## Errors Practice
 
 What's the issue?
 
