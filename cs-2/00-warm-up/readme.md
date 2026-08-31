@@ -22,6 +22,10 @@
 
 - See who can recreate the reference program the fastest!
 
+## What is CS 2?
+
+CS 2: Data Processing and Practical Applications
+
 ## Problem: Horizontal Bar Chart
 
 Given a list of integers each greater than zero, generate a horizontal bar chart
@@ -132,3 +136,15 @@ https://www.w3schools.com/python/python_getstarted.asp
 Practice problems:
 
 https://www.w3schools.com/python/python_exercises.asp
+
+## Challenge: Vertical Bar Chart
+
+```
+   X
+   X
+   X
+ X X
+ X XX
+ XXXX
+XXXXXX
+```
