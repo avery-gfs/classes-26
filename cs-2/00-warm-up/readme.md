@@ -58,3 +58,13 @@ for n in numbers:
 ```
 
 There are many ways to solve this problem; that's what makes CS beautiful!
+
+## Python practice
+
+Language reference:
+
+https://www.w3schools.com/python/python_getstarted.asp
+
+Practice problems:
+
+https://www.w3schools.com/python/python_exercises.asp
