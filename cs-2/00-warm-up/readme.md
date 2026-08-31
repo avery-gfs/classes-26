@@ -22,6 +22,22 @@
 
 - See who can recreate the reference program the fastest!
 
+## Problem: Horizontal Bar Chart
+
+Given a list of integers each greater than zero, generate a horizontal bar chart
+where each number `n` is shown as a row column of `X` characters of length `n`.
+
+For the numbers `[1, 4, 2, 7, 3, 1]` the output should be:
+
+```
+X
+XXXX
+XX
+XXXXXXX
+XXX
+X
+```
+
 ## Solutions
 
 ```py
@@ -36,6 +52,15 @@ for n in numbers:
     print(row)
 ```
 
+```
+X
+XXXX
+XX
+XXXXXXX
+XXX
+X
+```
+
 ---
 
 ```py
@@ -48,6 +73,15 @@ for n in numbers:
     print()
 ```
 
+```
+X
+XXXX
+XX
+XXXXXXX
+XXX
+X
+```
+
 ---
 
 ```py
@@ -55,6 +89,15 @@ numbers = [1, 4, 2, 7, 3, 1]
 
 for n in numbers:
     print("X" * n)
+```
+
+```
+X
+XXXX
+XX
+XXXXXXX
+XXX
+X
 ```
 
 There are many ways to solve this problem; that's what makes CS beautiful!
