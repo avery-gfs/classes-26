@@ -26,6 +26,49 @@
 
 CS 2: Data Processing and Practical Applications
 
+```
+away_team,away_score,home_team,home_score
+Dallas Cowboys,20,Philadelphia Eagles,24
+Kansas City Chiefs,21,Los Angeles Chargers,27
+Arizona Cardinals,20,New Orleans Saints,13
+Pittsburgh Steelers,34,New York Jets,32
+Miami Dolphins,8,Indianapolis Colts,33
+Tampa Bay Buccaneers,23,Atlanta Falcons,20
+New York Giants,6,Washington Commanders,21
+Carolina Panthers,10,Jacksonville Jaguars,26
+Cincinnati Bengals,17,Cleveland Browns,16
+Las Vegas Raiders,20,New England Patriots,13
+...
+```
+
+---
+
+```
+name:                    Philadelphia Eagles
+number of games:         17
+wins:                    11
+losses:                  6
+ties:                    0
+win percent:             0.647
+points scored:           379
+points allowed:          325
+points scored per game:  22.3
+points allowed per game: 19.1
+
+name:                    Dallas Cowboys
+number of games:         17
+wins:                    7
+losses:                  9
+ties:                    1
+win percent:             0.412
+points scored:           471
+points allowed:          511
+points scored per game:  27.7
+points allowed per game: 30.1
+
+...
+```
+
 ## Problem: Horizontal Bar Chart
 
 Given a list of integers each greater than zero, generate a horizontal bar chart
@@ -40,6 +83,18 @@ XX
 XXXXXXX
 XXX
 X
+```
+
+## Challenge: Vertical Bar Chart
+
+```
+   X
+   X
+   X
+ X X
+ X XX
+ XXXX
+XXXXXX
 ```
 
 ## Solutions
@@ -138,15 +193,3 @@ https://www.w3schools.com/python/python_getstarted.asp
 Practice problems:
 
 https://www.w3schools.com/python/python_exercises.asp
-
-## Challenge: Vertical Bar Chart
-
-```
-   X
-   X
-   X
- X X
- X XX
- XXXX
-XXXXXX
-```
