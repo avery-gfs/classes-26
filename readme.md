@@ -24,6 +24,8 @@ solve intuitively, while still struggling to describe our solutions formally.
 Computer science gives us tools to be precise about our approaches to problem
 solving, and thus expand our ability to tackle complexity.
 
+---
+
 _And -- most importantly -- it lets use make cool ASCII art._
 
 ![](assets/ascii-dali.png)
@@ -66,6 +68,8 @@ Class grade breakdown:
   talking, so please refrain from conversations while I'm lecturing. Definitely
   do not talk when your classmates are presenting to the class. Put computers
   away during lectures and presentations.
+
+---
 
 - Ask questions, ask for help
 
