@@ -1,10 +1,4 @@
-import {
-  CLASS_REPO,
-  deckHref,
-  dirOf,
-  fetchTree,
-  readmePaths,
-} from "./github.js";
+import { CLASS_REPO, deckHref, deckPaths, dirOf, fetchTree } from "./github.js";
 
 const outlineEl = document.getElementById("outline");
 const freshnessEl = document.getElementById("freshness");
@@ -28,7 +22,7 @@ async function load({ force = false } = {}) {
     return;
   }
 
-  render(readmePaths(tree.paths));
+  render(deckPaths(tree.paths));
 
   // Only a stale list is worth saying anything about: it is out of date and
   // there is a reason why.
@@ -51,14 +45,15 @@ function navigationType() {
 // -- rendering ---------------------------------------------------------------
 
 function render(paths) {
-  // The repo-root readme is the repo, not a unit, so it isn't listed — and
-  // neither is docs/, which is this site's own source rather than course work.
+  // docs/ is this site's own source rather than course work, so it isn't
+  // listed; the top-level readme and any sibling notes are, as the
+  // curriculum's overview.
   const units = paths
     .map((path) => ({ dir: dirOf(path), loc: { ...CLASS_REPO, path } }))
-    .filter(({ dir }) => dir && !/^docs(\/|$)/.test(dir));
+    .filter(({ dir }) => !/^docs(\/|$)/.test(dir));
 
   if (!units.length) {
-    setStatus("No unit readmes found in this repo.");
+    setStatus("No decks found in this repo.");
     return;
   }
 
@@ -67,7 +62,11 @@ function render(paths) {
       "ul",
       { class: "decks" },
       units.map(({ dir, loc }) =>
-        el("li", {}, el("a", { class: "unit", href: deckHref(loc) }, dir))
+        el(
+          "li",
+          {},
+          el("a", { class: "unit", href: deckHref(loc) }, dir || loc.path),
+        )
       ),
     ),
   );

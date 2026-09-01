@@ -11,8 +11,8 @@ Published at <https://avery-gfs.github.io/slides/>.
 ## Using it
 
 - **`index.html`** — _Avery's CS Curriculum_ — lists every `readme.md` in the
-  class repo by folder path, each with a link to the rendered slides and one to
-  the unit's folder on GitHub.
+  class repo by folder path, plus any top-level `.md` file, each linking to its
+  rendered slides. `docs/` is left out as this site's own source.
 - **`view.html?src=…`** renders one document. `src` is either a path inside the
   class repo (`cs-1/00-introduction`) or a link to any file or folder on GitHub:
 

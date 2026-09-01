@@ -24,7 +24,9 @@
 
 ## What is CS 2?
 
-CS 2: Data Processing and Practical Applications
+**CS 2: Data Processing and Practical Applications**
+
+---
 
 ```
 away_team,away_score,home_team,home_score

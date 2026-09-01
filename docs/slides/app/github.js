@@ -388,10 +388,12 @@ function writeCache(key, entry) {
 
 // -- deck listing ----------------------------------------------------------
 
-// Every readme in the repo, sorted by path, with the repo-root readme first.
-export function readmePaths(paths) {
+// The markdown that gets a deck: every readme in the repo, plus any other
+// top-level `.md` file. Sorted by path, with the repo-root files first.
+export function deckPaths(paths) {
   return paths
-    .filter((p) => /(^|\/)readme\.md$/i.test(p))
+    .filter((p) => /(^|\/)readme\.md$/i.test(p) || !p.includes("/"))
+    .filter((p) => /\.md$/i.test(p))
     .sort((a, b) => {
       const rootA = !a.includes("/");
       const rootB = !b.includes("/");

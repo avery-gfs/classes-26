@@ -2,9 +2,9 @@
 // the deck listing — without a browser: node scripts/test-github.js
 import assert from "node:assert/strict";
 import {
+  deckPaths,
   parseSource,
   prepareMarkdown,
-  readmePaths,
   splitSlides,
   splitTitle,
 } from "../app/github.js";
@@ -230,21 +230,23 @@ test("documents with no usable title are left alone", () => {
   assert.deepEqual(splitTitle("# Only"), { title: "", body: "# Only" });
 });
 
-// -- readmePaths ------------------------------------------------------------
+// -- deckPaths -------------------------------------------------------------
 
-test("only readmes, sorted naturally", () => {
+test("readmes plus top-level markdown, sorted naturally", () => {
   assert.deepEqual(
-    readmePaths([
+    deckPaths([
       "readme.md",
       "cs-1/00-introduction/readme.md",
       "cs-1/00-introduction/assets/x.png",
       "cs-1/01-variables-and-io/README.md",
       "cs-1/10-recursion/readme.md",
       "cs-1/2-loops/readme.md",
+      "cs-1/notes.md",
       "sequence.md",
     ]),
     [
       "readme.md",
+      "sequence.md",
       "cs-1/00-introduction/readme.md",
       "cs-1/01-variables-and-io/README.md",
       "cs-1/2-loops/readme.md",
