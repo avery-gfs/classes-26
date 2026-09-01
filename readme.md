@@ -35,7 +35,7 @@ _And -- most importantly -- it lets use make cool ASCII art._
 - Studied CS in college
 - Worked as a software developer
 
-![](/assets/TI_84_Plus_Silver_Edition.png)
+![](/assets/ti-84.jpeg)
 
 ---
 
