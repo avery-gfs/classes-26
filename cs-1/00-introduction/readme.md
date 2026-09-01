@@ -98,4 +98,4 @@ have different rules about how those instructions can be used.
 I've worked on designing a new programming language as a personal project for
 many years.
 
-![](assets/lang-comparison.png)
+![](/assets/lang-comparison.png)
