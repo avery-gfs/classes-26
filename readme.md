@@ -45,7 +45,7 @@ _And -- most importantly -- it lets use make cool ASCII art._
 - Functional, immutable data structures
 - Education and data-processing focused
 
-![](/assets/lang-comparison.png)
+![](/assets/ptls.png)
 
 ## Structure
 
