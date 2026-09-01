@@ -127,29 +127,6 @@ X
 ```py
 numbers = [1, 4, 2, 7, 3, 1]
 
-for i in range(len(numbers)):
-    row = ""
-
-    for j in range(numbers[i]):
-        row += "X"
-   
-    print(row)
-```
-
-```
-X
-XXXX
-XX
-XXXXXXX
-XXX
-X
-```
-
----
-
-```py
-numbers = [1, 4, 2, 7, 3, 1]
-
 for n in numbers:
     for j in range(n):
         print("X", end="")

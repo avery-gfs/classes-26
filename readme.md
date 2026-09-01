@@ -14,7 +14,7 @@
 Because it's fun and challenging. Because it helps us build interesting and
 useful tools. And because it teaches us how to solve complex problems.
 
-![](assets/maze.png)
+![](/assets/maze.png)
 
 You could solve this maze above by hand. But could you describe that process
 you'd use to solve it? It's interesting how many tasks we as humans are able to
@@ -26,7 +26,26 @@ solving, and thus expand our ability to tackle complexity.
 
 _And -- most importantly -- it lets use make cool ASCII art._
 
-![](assets/ascii-dali.png)
+![](/assets/ascii-dali.png)
+
+## Background
+
+- Started programming in 8th grade, making calculator games
+- Taught myself
+- Studied CS in college
+- Worked as a software developer
+
+![](/assets/TI_84_Plus_Silver_Edition.png)
+
+---
+
+**I Made a Programming Language!**
+
+- High level
+- Functional, immutable data structures
+- Education and data-processing focused
+
+![](/assets/lang-comparison.png)
 
 ## Structure
 
@@ -95,10 +114,9 @@ Class grade breakdown:
 
 ## Effective work
 
-- I won't assign much take-home work for this class.
-
-- You will have sufficient time in class to complete assignments. I ask
-  therefore that you make effective use of your time in class.
+- I won't assign much take-home work for this class. You will have sufficient
+  time in class to complete assignments. I ask therefore that you make effective
+  use of your time in class.
 
 - You are welcome to collaborate with others so long as you and your partners
   stay on-task.
