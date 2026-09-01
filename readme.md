@@ -28,7 +28,17 @@ _And -- most importantly -- it lets use make cool ASCII art._
 
 ![](assets/ascii-dali.png)
 
-## Grading
+## Structure
+
+- Short units that intoduce new concepts and apply them to practical problems.
+
+- Collaborative work on problems, in pairs, small groups, or as a class.
+
+- Mix of digital and pencil-and-paper work.
+
+- Self-directed projects with presentations.
+
+## Goals
 
 My goals for this class are:
 
@@ -37,10 +47,7 @@ My goals for this class are:
 - That students work hard and focus in class
 - That students learn a lot
 
-Some students and teachers would see the first two goals as incompatible with
-the second two, but I think that it's possible to achieve all of these goals
-together. My policies for this class are designed to help you all achieve these
-goals.
+## Grading
 
 Class grade breakdown:
 
