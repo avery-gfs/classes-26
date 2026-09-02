@@ -6,8 +6,6 @@
 
 - Get ready to run Python code (you can use pickcode.io)!
 
-  ![](/assets/pickcode.png)
-
 - Write and run a test program
 
   ```py

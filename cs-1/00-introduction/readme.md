@@ -87,15 +87,12 @@ variety of programming languages.
 
 - **Python**: the programming language that we'll be using in this course.
 
-## I Made a Programming Language!
+---
 
 Different spoken languages have different vocabulary (words) and different rules
 for how those words can fit together (grammar).
 
 Similarly, different programming languages provide different instructions, and
 have different rules about how those instructions can be used.
-
-I've worked on designing a new programming language as a personal project for
-many years.
 
 ![](/assets/lang-comparison.png)
