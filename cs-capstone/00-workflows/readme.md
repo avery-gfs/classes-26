@@ -4,6 +4,8 @@
 
 ![](/assets/to-do-simple.gif)
 
+---
+
 For a given task name:
 
 1. Entering the name adds new task to list
@@ -11,8 +13,6 @@ For a given task name:
 3. Entering the name a third time removes task from list
 
 Tasks sorted by done status (undone before done), then by task name
-
----
 
 To add:
 
