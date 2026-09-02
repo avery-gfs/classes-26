@@ -39,7 +39,7 @@ _And -- most importantly -- it lets use make cool ASCII art._
 
 ---
 
-**I Made a Programming Language!**
+**I Made a Programming Language!** [Pointless](pointless.dev)
 
 - High level
 - Functional, immutable data structures
@@ -163,3 +163,10 @@ learning tool, rather than a give-me-the-answer tool, is particularly hard for
 new software developers to pull off. I hope that this new guidance will promote
 deeper understanding of our subject while preparing students for real-world
 software work.
+
+## Setup
+
+Make an account on [pickcode.io](pickcode.io) (you can log in with your google
+account).
+
+![](/assets/pickcode.png)

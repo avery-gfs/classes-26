@@ -15,28 +15,18 @@
 numbers = [1, 4, 2, 7, 3, 1]
 
 for n in numbers:
-    row = ""
-
-    for j in range(n):
-        row += "X"
-
-    print(row)
+    print("X" * n)
 
 
 # Alternatives
 
-# numbers = [1, 4, 2, 7, 3, 1]
-#
-# for i in range(len(numbers)):
+# for n in numbers:
 #     row = ""
 #
-#     for j in range(numbers[i]):
+#     for j in range(n):
 #         row += "X"
 #
 #     print(row)
-
-# for n in numbers:
-#     print("X" * n)
 
 # for n in numbers:
 #     for j in range(n):
