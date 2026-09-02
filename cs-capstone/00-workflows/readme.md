@@ -12,6 +12,8 @@ For a given task name:
 
 Tasks sorted by done status (undone before done), then by task name
 
+---
+
 To add:
 
 - Persistence
