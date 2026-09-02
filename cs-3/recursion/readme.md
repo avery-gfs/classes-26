@@ -251,4 +251,4 @@ $$
 F_n = F_{n - 1} + F_{n - 2}
 $$
 
-<img src="assets/fibonacci-tree.png" height="300px" />
+![](/assets/fibonacci-tree.png)
