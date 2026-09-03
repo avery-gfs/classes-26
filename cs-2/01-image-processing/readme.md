@@ -9,7 +9,7 @@
 
 ## Pixels
 
-![](images/bird.png)
+![](bird.png)
 
 ## Subpixels
 
@@ -17,8 +17,6 @@
 <img height="300" src="/assets/Cone-fundamentals-with-srgb-spectrum.svg" />
 
 ## Color Channels
-
-![](/assets/Rgb-raster-image.png)
 
 - `(r, g, b)` notation
 - https://rgbcolorpicker.com/
@@ -45,6 +43,54 @@ from PIL import Image
 # Load input image
 im = Image.open("bird.png")
 
+print(im.width)
+print(im.height)
+print(im.getpixel((0, 0)))
+```
+
+```
+700
+500
+(45, 70, 31)
+```
+
+---
+
+```py
+from PIL import Image
+
+# Load input image
+im = Image.open("bird.png")
+
+for y in range(2):
+    for x in range(2):
+        color = im.getpixel((x, y))
+        print(color)
+```
+
+```
+(45, 70, 31)
+(45, 65, 28)
+(46, 71, 32)
+(42, 62, 26)
+```
+
+---
+
+## Tuples
+
+```py
+(r, g, b) = im.getpixel((x, y))
+```
+
+## Output
+
+```py
+from PIL import Image
+
+# Load input image
+im = Image.open("bird.png")
+
 # Make blank output image with same dimension as the original
 output = Image.new(im.mode, (im.width, im.height))
 
@@ -60,20 +106,6 @@ for y in range(im.height):
 output.save("output.png")
 ```
 
-## Tuples
-
-```py
-(r, g, b) = im.getpixel((x, y))
-```
-
-```py
-color = im.getpixel((x, y))
-
-# ...
-
-(r, g, b) = color
-```
-
 ## Max Red Demo
 
 ```py
@@ -83,7 +115,7 @@ r = 255
 ## Simple Grayscale
 
 <img width="450" src="bird.png" />
-<img width="450" src="grayscale/output.png" />
+<img width="450" src="grayscale.png" />
 
 - https://en.wikipedia.org/wiki/Grayscale
 - `r`, `g`, and `b` are all equal
@@ -92,7 +124,7 @@ r = 255
 ## Better Grayscale
 
 <img width="450" src="bird.png" />
-<img width="450" src="better-grayscale/output.png" />
+<img width="450" src="better-grayscale.png" />
 
 - Relative / perceptual luminance
 - https://brandonrohrer.com/convert_rgb_to_grayscale.html
@@ -104,7 +136,7 @@ $$l = 0.299 \cdot r + 0.587 \cdot g + 0.114 \cdot b$$
 ## Black and White
 
 <img width="450" src="bird.png" />
-<img width="450" src="black-white/output.png" />
+<img width="450" src="black-white.png" />
 
 - Black `(0, 0, 0)`
 - White `(255, 255, 255)`
