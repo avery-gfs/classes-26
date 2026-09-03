@@ -75,8 +75,6 @@ for y in range(2):
 (42, 62, 26)
 ```
 
----
-
 ## Tuples
 
 ```py
