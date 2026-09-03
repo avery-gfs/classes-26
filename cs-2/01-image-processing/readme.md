@@ -31,7 +31,7 @@
 
 ## Colors Worksheet
 
-<img height="450" src="/assets/checker_shadow_illusion.png" />
+<img height="550" src="/assets/checker_shadow_illusion.png" />
 
 ## PIL / Pillow
 
@@ -114,8 +114,8 @@ r = 255
 
 ## Simple Grayscale
 
-<img width="450" src="bird.png" />
-<img width="450" src="grayscale.png" />
+<img width="550" src="bird.png" />
+<img width="550" src="grayscale.png" />
 
 - https://en.wikipedia.org/wiki/Grayscale
 - `r`, `g`, and `b` are all equal
@@ -123,8 +123,8 @@ r = 255
 
 ## Better Grayscale
 
-<img width="450" src="bird.png" />
-<img width="450" src="better-grayscale.png" />
+<img width="550" src="bird.png" />
+<img width="550" src="better-grayscale.png" />
 
 - Relative / perceptual luminance
 - https://brandonrohrer.com/convert_rgb_to_grayscale.html
@@ -135,8 +135,8 @@ $$l = 0.299 \cdot r + 0.587 \cdot g + 0.114 \cdot b$$
 
 ## Black and White
 
-<img width="450" src="bird.png" />
-<img width="450" src="black-white.png" />
+<img width="550" src="bird.png" />
+<img width="550" src="black-white.png" />
 
 - Black `(0, 0, 0)`
 - White `(255, 255, 255)`
