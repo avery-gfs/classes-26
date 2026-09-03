@@ -57,7 +57,7 @@ for y in range(im.height):
         output.putpixel((x, y), (r, g, b))
 
 # Save output image
-output.save("grayscale.png")
+output.save("output.png")
 ```
 
 ## Tuples
@@ -82,8 +82,8 @@ r = 255
 
 ## Simple Grayscale
 
-<img width="450" src="images/bird.png" />
-<img width="450" src="images/grayscale/grayscale.png" />
+<img width="450" src="bird.png" />
+<img width="450" src="grayscale/output.png" />
 
 - https://en.wikipedia.org/wiki/Grayscale
 - `r`, `g`, and `b` are all equal
@@ -91,8 +91,8 @@ r = 255
 
 ## Better Grayscale
 
-<img width="450" src="images/bird.png" />
-<img width="450" src="images/better-grayscale/better-grayscale.png" />
+<img width="450" src="bird.png" />
+<img width="450" src="better-grayscale/output.png" />
 
 - Relative / perceptual luminance
 - https://brandonrohrer.com/convert_rgb_to_grayscale.html
@@ -103,8 +103,8 @@ $$l = 0.299 \cdot r + 0.587 \cdot g + 0.114 \cdot b$$
 
 ## Black and White
 
-<img width="450" src="images/bird.png" />
-<img width="450" src="images/black-white/black-white.png" />
+<img width="450" src="bird.png" />
+<img width="450" src="black-white/output.png" />
 
 - Black `(0, 0, 0)`
 - White `(255, 255, 255)`
